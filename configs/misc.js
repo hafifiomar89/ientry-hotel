@@ -1,4 +1,4 @@
 module.exports = {
-    setupComplete: false,
-    virtualFolder: 'VIRTUAL-FOLDER-NAME'
+    setupComplete: true,
+    virtualFolder: 'ientry-hotel'
 };
