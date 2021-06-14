@@ -1,0 +1,95 @@
+{% extends 'default.njk' %}
+
+{% block content -%}
+
+<div class="section">
+	<div class="wrapper">
+		<div class="section__block">
+			<div class="section__block-header">
+				<div class="section__block-header-primary">
+					<div class="section__block-header-ctas">
+						<button class="button-text with-icon--" onclick="history.back()"><i class="fas fa-arrow-left"></i> Back</button>
+					</div>
+
+					<div class="heading section__block-heading">
+						{{ data.mainHeading }} <span class="text-highlight">{{ data.mainHeadingHighlight }}</span>
+					</div>
+
+					<div class="section__block-desc">
+						To proceed, you will need to agree to the Terms of Services. We process your information as described in our <a target="_blank" href="http://www.ientry.com.my/privacypolicy">www.ientry.com.my/privacypolicy</a>
+					</div>
+				</div>
+
+				<div class="section__block-header-secondary">
+					<div class="section__block-header-image">
+						<img src="{{path.images.pages}}terms-and-conditions/{{ data.mainHeaderImage }}">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section__block">
+			<div class="subheading section__block-subheading">
+				{{ data.subHeading1 }} <span class="text-highlight">{{ data.subHeadingHighlight1 }}</span>
+			</div>
+
+			<div class="terms-content">
+				Registed Employer / Employee or Individual <b>MUST DOWNLOAD</b> I Entry My Personal Apps from Playstore ( Android) Or Appstore ( i Phone ).
+			</div>
+		</div>
+
+		<div class="section__block">
+			<div class="subheading section__block-subheading">
+				{{ data.subHeading2 }} <span class="text-highlight">{{ data.subHeadingHighlight2 }}</span>
+			</div>
+
+			<ol class="terms-content-list">
+				<li>
+					Any damages or loss to hotel property, whether accidental or willful, is the responsibility of the registered employer / employee or individual for each particular room. Any costs associated with repairs and/or replacement of stolen/loss/damages will be charged to the registered employer or employee or individual.
+				</li>
+
+				<li>
+					All payment is to be made in <b>FULL PAYMENT</b> before Check in, and any extension days, must be done through online booking at <a href="http://www.ientryhotel.com">www.ientryhotel.com</a> with <b>FULL PAYMENT</b>.
+				</li>
+
+				<li>
+					All payment made is non-refundable and subject to I Entry Hotel’s Managemet Approval.
+				</li>
+
+				<li>
+					The employer / employee or individual must abide by all rules and regulations as stipulated in the Hotel’s Rules and Regulations.
+				</li>
+
+				<li>
+					The employer / employee or individual must abide all the Standard Operationg Procedures (SOP) as stipulated in ACT 342 and as provided by Government from time to time.
+				</li>
+			</ol>
+		</div>
+
+		<div class="section__block">
+			<div class="subheading section__block-subheading">
+				{{ data.subHeading3 }} <span class="text-highlight">{{ data.subHeadingHighlight3 }}</span>
+			</div>
+
+			<ol class="terms-content-list">
+				<li>
+					Employee or Individual is <b>FULLY RESPONSIBLE</b> for updating COVID-19 Daily Self Monitoring on daily basis <b>WITHOUT FAIL</b> in the I Entry Personal Apps.
+				</li>
+
+				<li>
+					If Employee or Individual feels severe pain on Category 2B and above, <b>DO NOT PANIC!</b> In the I Entry Personal Apps, there is an <b>EMERGENCY - Need Doctor Button</b>, kindly press and we will call a doctor immediately. For reminders, this button is only used when emergency.
+				</li>
+
+				<li>
+					For emergency purposes the employer / employee or individual can call hotel help desk which is available.
+				</li>
+
+				<li>
+					I Entry Malaysia Sdn Bhd and Hotel shall not be responsible if the employee or individual experiences harmful sickness or injury or an unexpected and sudden death incident during thestay in the Hotel Quarantine.
+				</li>
+			</ol>
+		</div>
+	</div>
+</div>
+
+{%- endblock %}

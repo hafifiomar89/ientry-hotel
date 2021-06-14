@@ -1,0 +1,37 @@
+title: "Booking"
+
+navigation:
+  - 
+    link: "about-us.html"
+    title: "About us"
+  - 
+    link: "our-hotels.html"
+    title: "Our Hotels"
+  -
+    link: "helpdesk.html"
+    title: "Helpdesk"
+
+mainHeading: "Fill in your"
+mainHeadingHighlight: "details"
+mainHeaderImage: "gfx-header.png"
+
+subHeading1: "Personal"
+subHeadingHighlight1: "Details"
+
+subHeading2: "Address"
+subHeadingHighlight2: "Details"
+
+subHeading3: "Pickup"
+subHeadingHighlight3: "Details"
+
+subHeading4: "Emergency"
+subHeadingHighlight4: "Details"
+
+subHeading5: "Additional"
+subHeadingHighlight5: "Service"
+
+subHeading6: "Dependent"
+subHeadingHighlight6: "Guest"
+
+subHeading7: "Amount to"
+subHeadingHighlight7: "pay"

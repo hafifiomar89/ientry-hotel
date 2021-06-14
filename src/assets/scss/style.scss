@@ -2,8 +2,15 @@
     iEntry Hotel
 -----------------------------------------------------------------------------*/
 
+/*---- Fontawesome ----*/
+
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+
 /*---- Imports ----*/
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 @import 'partials/imports/normalize';
 
 /*---- Globals ----*/
@@ -21,7 +28,23 @@
 @import 'partials/components/site-header';
 @import 'partials/components/site-main';
 @import 'partials/components/wrappers';
+@import 'partials/components/slick-customs';
+@import 'partials/components/sections';
+@import 'partials/components/fields';
+@import 'partials/components/form-layout';
+@import 'partials/components/headings';
+@import 'partials/components/text';
+@import 'partials/components/accordion';
+@import 'partials/components/partial-underline';
 
 /*---- Priority Components ----*/
 
 @import 'partials/components/utilities';
+
+/*---- Pages ----*/
+
+@import 'partials/pages/index';
+@import 'partials/pages/booking';
+@import 'partials/pages/booking-confirm';
+@import 'partials/pages/payment-success';
+@import 'partials/pages/terms-and-conditions';

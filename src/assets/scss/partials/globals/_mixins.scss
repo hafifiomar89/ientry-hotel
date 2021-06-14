@@ -2,14 +2,14 @@
 //  Mixins
 //-----------------------------------------------------------------------------
 
-// @mixin placeholders() {
-//     /* autoprefixer: off */
-//    &::-webkit-input-placeholder { @content; }
-//        &::-ms-input-placeholder { @content; }
-//         &:-ms-input-placeholder { @content; }
-//             &::-moz-placeholder { @content; }
-//              &:-moz-placeholder { @content; }
-// }
+@mixin placeholders() {
+    /* autoprefixer: off */
+   &::-webkit-input-placeholder { @content; }
+       &::-ms-input-placeholder { @content; }
+        &:-ms-input-placeholder { @content; }
+            &::-moz-placeholder { @content; }
+             &:-moz-placeholder { @content; }
+}
 
 @mixin hidden-accessible() {
     width: 0;

@@ -45,8 +45,15 @@
 
 $black: #333;
     $light-black: #999;
+$grey: #596c80;
+    $light-grey-2: #b3b1a8;
 $white: #fff;
     $dark-white: #f2f2f2;
+$orange: #f78248;
+$red: #d31145;
+$blue-1: #176893;
+$blue-2: #163560;
+$blue-3: #8397b0;
 
 //=============================================================================
 //  $ Easings
@@ -80,7 +87,7 @@ $ease-in-out-power1: cubic-bezier(0.455, 0.03, 0.515, 0.955); // Ease In Out Qua
 //=============================================================================
 
 $ff-base: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$ff-alpha: 'Georgia', #{$ff-base};
+$ff-alpha: 'Lato', #{$ff-base};
 
 $fw-thin:       200;
 $fw-light:      300;
@@ -181,7 +188,7 @@ $smooth-transition-easing: $ease-out-power1;
 //  $ Wrappers
 //=============================================================================
 
-$wrapper-width: 1000px;
+$wrapper-width: 1200px;
 $wrapper-gutter: 20px;
 
 //=============================================================================

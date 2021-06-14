@@ -1,0 +1,94 @@
+/*-----------------------------------------------------------------------------
+    $ Slick Custom
+-----------------------------------------------------------------------------*/
+
+.slick-slider {
+    margin-bottom: 50px;
+}
+
+.slick-vertical {
+    margin-bottom: 0;
+}
+
+.slick-dots {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+
+    li {
+        width: 12px;
+        height: 12px;
+        background: $orange;
+        border-radius: 50%;
+        margin: 5px;
+        cursor: pointer;
+
+        &.slick-active {
+            opacity: 1;
+            background: $blue-1
+        }
+
+        &:only-child {
+            display: none;
+        }
+    }
+}
+
+.slick-arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../images/shared/icons/arrow.png") center no-repeat;
+        background-size: cover;
+
+    }
+
+    &.slick-prev {
+        // transform: translateY(-50%) rotate(180deg);
+        left: 15px;
+    }
+
+    &.slick-next {
+        right: 15px;
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+@media ($bp-sm-dn) {
+    .slick-slider {
+        margin-bottom: 30px;
+    }
+
+    .slick-dots {
+        bottom: -30px;
+
+        li {
+            width: 10px;
+            height: 10px;
+        }
+    }
+}

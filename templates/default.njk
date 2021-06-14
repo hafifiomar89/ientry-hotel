@@ -5,53 +5,206 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no"> <!-- Disable iOS auto telephone number detection -->
-    <title>{% if data.title %}{{ data.title }} | {% endif %}iEntry Hotel</title>
+    <title>
+        {%- if data.title -%} {{ data.title }} | {% endif -%}
+        {%- if language == 'my' -%} I-Entry Hotel {%- endif -%}
+        {%- if language != 'my' -%} I-Entry Hotel {%- endif -%}
+    </title>
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ path.root }}assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ path.root }}assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ path.root }}assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{ path.root }}assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="{{ path.root }}assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <link href="{{ path.css }}style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    {% block styles %}{% endblock %}
 </head>
 
 <body>
-    <h1 class="ha">
-        iEntry Hotel{% if data.title %} - {{ data.title }}{% endif %}
-    </h1>
+    <div class="site-main">
+        <header class="site-header">
+            <h1 class="ha">
+                Site Header
+            </h1>
 
-    <section class="site-header">
-        <h2 class="ha">
-            Site Header
-        </h2>
+            <div class="wrapper">
+                <div class="site-header__nav">
+                    <div class="site-header__logo">
+                        <span class="site-header__logo-block">
+                            <a href="{{ path.root }}{{ language }}/index.html">
+                                <img src="{{ path.images.logos }}logo.png" alt="I-Entry Hotel" class="site-header__logo-main">
+                            </a>
+                        </span>
+                    </div>
 
-        <div class="wrapper">
-            Header here.
+                    <div class="site-header__block">
+                        {% for nav in data.navigation %}
+                            <a class="{%- if page_title == nav.title -%} active {% endif %} site-header__nav-item" href="{%- if language == 'my' -%}{{nav.link}} {% else %} {{nav.link}} {% endif %}">{{nav.title}}</a>
+                        {% endfor %}
+
+                        <div class="site-header__language-toggle">
+                            <a href="{{ path.language.my }}" class="{%- if language == 'my' -%} site-header_language-toggle-item active-- {% else %} site-header_language-toggle-item {%- endif -%}">Bahasa</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
+                            <a href="{{ path.language.en }}" class="{%- if language != 'my' -%} site-header_language-toggle-item active-- {% else %} site-header_language-toggle-item {%- endif -%}">English</a>
+                        </div>
+                    </div>
+
+                    <span class="hamburger hamburger--collapse navbar__item">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            {# <div class="site-header__logo">
+                <span class="site-header__logo-block">
+                    <a href="{{ path.root }}{{ language }}/index.html">
+                        <img src="{{ path.images.logos }}gopayz-white.svg" alt="GoPayz" class="site-header__logo-main">
+                    </a>
+                </span>
+
+                <span class="site-header__logo-block">
+                    <a href="#">
+                        <img src="{{ path.images.logos }}tekan-tekan-je-my.png" alt="Tekan-tekan je boleh menang" class="site-header__logo-masthead">
+                    </a>
+                </span>
+            </div>
 
             <nav>
-                <h3 class="ha">
-                    Navigation
-                </h3>
-            </nav>
-        </div>
-    </section>
+                <h2 class="ha">
+                    Language toggle
+                </h2>
 
-    <main class="site-main">
+                <div class="site-header__language-toggle">
+                    <a href="{{ path.language.my }}" class="{%- if language == 'my' -%} site-header_language-toggle-item active-- {% else %} site-header_language-toggle-item {%- endif -%}">BM</a>
+                    <a href="{{ path.language.en }}" class="{%- if language != 'my' -%} site-header_language-toggle-item active-- {% else %} site-header_language-toggle-item {%- endif -%}">ENG</a>
+                </div>
+
+                <h2 class="ha">
+                    Blurps
+                </h2>{% if data.siteBlurps %}
+
+                <ul class="site-header__blurps">
+                    {% for siteBlurp in data.siteBlurps %}
+                    <li class="site-header__blurp">
+                        {% include 'site-blurps/' + siteBlurp + '.njk' %}
+                    </li>
+                    {% endfor %}
+                </ul>{% endif %}
+            </nav> #}
+        </header>
+
         {% block content %}{% endblock %}
-    </main>
+    </div>
 
-    <section class="site-footer">
-        <h2 class="ha">
+    <footer class="site-footer">
+        <h1 class="ha">
             Site Footer
-        </h2>
+        </h1>
 
         <div class="wrapper">
-            Footer here.
+            <div class="site-footer__block">
+                <span class="site-footer__copyright">
+                    All material herein © 2021 I-Entry Hotel Pte. Ltd. All Rights Reserved.
+                </span>
 
-            <nav>
-                <h3 class="ha">
-                    Navigation
-                </h3>
-            </nav>
+                <span class="site-footer__socmed">
+                    <span class="site-footer__socmed-title">
+                        Connect with us:
+                    </span>
+
+                    <a href="#facebook" class="site-footer__socmed-link">
+                        <img src="{{ path.images.icons }}facebook.png" alt="Facebook" class="site-footer__socmed-icon">
+                    </a>
+
+                    <a href="#instagram" class="site-footer__socmed-link">
+                        <img src="{{ path.images.icons }}instagram.png" alt="Instagram" class="site-footer__socmed-icon">
+                    </a>
+                </span>
+            </div>
         </div>
-    </section>
+    </footer>
+
+    {# <aside class="modal flexi-width--" data-modal id="downloadModal">
+        <div class="modal__contents">
+            <div class="modal_block   modal_header">
+                <h1 class="heading   modal__heading">
+                    Scan this code to begin download
+                </h1>
+
+                <button type="button" class="modal__closer" data-close-modal></button>
+            </div>
+
+            <div class="modal__block">
+                <img src="{{ path.images.base }}shared/qr-codes/get-the-app-qr-code.png" alt="QR Code" class="modal__image">
+            </div>
+        </div>
+    </aside> #}
+
+    {# <div class="popup   download-popup" data-popup id="downloadPopup">
+        <div class="popup__inner">
+            <div class="popup_section p_s--center">
+                <button type="button" class="button b--raised b--tertiary b--icon   popup__closer" data-close-popup>
+                    <span class="button__inner"></span>
+                </button> #}
+
+                {# <div class="popup_block p_b--center">
+                    <h1 class="heading   popup__heading">
+                        Sign up and get<br class="d-sm-n">
+                        <span class="heading__emphasise">FREE</span><br class="d-sm-n">
+                        e-voucher
+                    </h1>
+                </div> #}
+
+                {# <div class="popup_block   download-popup_qr-badges-block">
+                    <div class="qr-badges">
+                        <div class="qr-badge">
+                            <div class="qr-badge__store-buttons">
+                                <div class="qr-badge__store-button app-store--">
+                                    <a href="#/">
+                                        <img src="{{ path.root }}assets/images/shared/buttons/download-on-the-app-store.png" alt="Download on the App Store">
+                                    </a>
+                                </div>
+
+                                <div class="qr-badge__store-button google-play--">
+                                    <a href="#/">
+                                        <img src="{{ path.root }}assets/images/shared/buttons/get-it-on-google-play.png" alt="Get it on Google Play">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <img src="{{ path.root }}assets/images/shared/qr-codes/gopayz-appstore-google-play.png" alt="" class="qr-badge__code">
+                        </div>
+
+                        <div class="qr-badge">
+                            <div class="qr-badge__store-buttons">
+                                <div class="qr-badge__store-button app-gallery--">
+                                    <a href="#/">
+                                        <img src="{{ path.root }}assets/images/shared/buttons/explore-it-on-appgallery.svg" alt="Explore it on AppGallery">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <img src="{{ path.root }}assets/images/shared/qr-codes/gopayz-appgallery.png" alt="" class="qr-badge__code">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="download-popup__visual">
+                <img src="{{ path.root }}assets/images/pages/popups/download-here{% if language === 'my' %}-my{% endif %}.png" alt="" class="download-popup__visual-src">
+            </div>
+        </div>
+    </div> #}
 
     <script src="{{ path.js }}externals.min.js"></script>
     <script src="{{ path.js }}main.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    {% block scripts %}{% endblock %}
 </body>
 
 </html>

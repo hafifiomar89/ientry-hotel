@@ -1,0 +1,38 @@
+{% extends 'default.njk' %}
+
+{% block content -%}
+
+<div class="section">
+	<div class="wrapper">
+		<form id='booking-confirm' action='#' method='post'>
+			<div class="section__block">
+				<div class="section__block-header payment-success--">
+					<div class="section__block-header-primary">
+						<div class="heading section__block-heading">
+							{{ data.mainHeading }}<br>
+							{{ data.mainHeading2 }} <span class="text-highlight">{{ data.mainHeadingHighlight }}</span>
+						</div>
+
+						<div class="booking-id">
+							Your booking id: <span class="text-highlight">000001</span>
+						</div>
+					</div>
+
+					<div class="section__block-header-secondary">
+						<div class="section__block-header-image">
+							<img src="{{path.images.pages}}payment-success/{{ data.mainHeaderImage }}">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section__block" style="text-align: center;">
+				<a class="button" href="{%- if language == 'my' -%} {% else %} {{ path.language.en }} {% endif %}">
+                    {%- if language == 'my' -%} Kembali ke halaman utama {% else %} Back to homepage {%- endif -%}
+                </a>
+            </div>
+		</form>
+	</div>
+</div>
+
+{%- endblock %}

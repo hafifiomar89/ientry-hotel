@@ -1,0 +1,23 @@
+/*-----------------------------------------------------------------------------
+    $ Payment success
+-----------------------------------------------------------------------------*/
+
+.section__block-header { 
+	&.payment-success-- {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+.booking-id {
+	border: 2px solid $blue-2;
+	padding: 10px 30px;
+	border-radius: 30px;
+	display: inline-block;
+	font-size: 18px;
+	color: $blue-3;
+	margin-bottom: 25px;
+
+	.text-highlight {
+		font-weight: $fw-bold;
+	}
+}

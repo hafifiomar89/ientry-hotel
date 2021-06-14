@@ -1,0 +1,31 @@
+/*-----------------------------------------------------------------------------
+    $ Headings
+-----------------------------------------------------------------------------*/
+
+.heading {
+    font-size: 42px;
+    color: #163560;
+    font-weight: $fw-black;
+    text-transform: uppercase;
+}
+.subheading {
+    font-size: 20px;
+    color: #163560;
+    font-weight: $fw-black;
+    text-transform: uppercase;
+}
+
+@media ($bp-md-dn) {
+    .heading {
+        font-size: 32px;
+    }
+    .subheading {
+        font-size: 18px;
+    }
+}
+
+@media ($bp-xs-dn) {
+    .heading {
+        font-size: 24px;
+    }
+}

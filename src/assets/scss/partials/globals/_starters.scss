@@ -16,16 +16,23 @@ button,
 input,
 select,
 textarea {
-    font: 100%/1.2 $ff-base;
+    font: 100%/1.2 $ff-alpha;
 }
 
 html {
-    background-color: $dark-white;
+    background-color: $white;
     color: $black;
 }
 
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+html,
+body {
+    height: 100%;
 }
 
 h1,

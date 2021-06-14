@@ -1,0 +1,90 @@
+/*-----------------------------------------------------------------------------
+    $ Accordion
+-----------------------------------------------------------------------------*/
+
+.accordion {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+    border-bottom: 1px solid $black;
+  
+    .accordion__content {
+        overflow: hidden;
+        display: none;
+        padding: .75em;
+        padding-top: 0;
+        padding-bottom: 2.5em;
+      
+        &.show {
+          /*display: block;*/
+        }
+    }
+  
+    .accordion__block {
+        // margin: .5em 0;
+      
+        a.accordion__toggle {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            color: $black;
+            padding: .75em;
+            border-top: 1px solid $black;
+            transition: background .3s ease;
+            font-weight: $fw-bold;
+            font-size: 18px;
+
+            .accordion__toggle-icon {
+                height: 18px;
+                position: relative;
+                width: 18px;
+                margin-top: 10px;
+
+                &:before,
+                &:after{
+                    background: #000;
+                    content: '';
+                    height: 3px;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 18px;
+                    transition: transform 500ms ease;
+                }
+                &:after {
+                        transform: rotate(90deg);
+                        transform-origin: center;
+                    }
+                    &:before {
+                        transform: rotate(180deg);
+                    }
+            }
+
+            &.expand {
+                .accordion__toggle-icon {
+                    
+                    &:after {
+                        transform: rotate(180deg);
+                    }
+
+                    &:before {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.accordion-ctas {
+    margin-top: 15px;
+    .accordion-ctas__wrapper {
+        display: flex;
+        align-items: center;
+        margin-left: -15px;
+        justify-content: flex-end;
+    }
+        .accordion-ctas__block {
+            padding-left: 15px;
+        }
+}

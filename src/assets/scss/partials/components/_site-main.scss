@@ -3,6 +3,30 @@
 -----------------------------------------------------------------------------*/
 
 .site-main {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    flex: 1 0 auto;
+    position: relative;
+
+    &:before {
+    	content: '';
+    	background: url("../images/shared/background/bg-top.png") no-repeat top center;
+    	background-size: contain;
+    	width: calc(100vw * 568 / 1920);
+    	height: calc(100vh * 381 / 568);
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	z-index: -1;
+    }
+
+    &:after {
+    	content: '';
+    	background: url("../images/shared/background/bg-bottom.png") no-repeat bottom left;
+    	background-size: contain;
+    	width: calc(100vw * 1566 / 1920);
+    	height: calc(100vh * 648 / 1566);
+    	position: absolute;
+    	bottom: 0;
+    	left: 0;
+    	z-index: -1;
+    }
 }

@@ -1,0 +1,169 @@
+{% extends 'default.njk' %}
+
+{% block content -%}
+
+<div class="section">
+    <div class="wrapper">
+        <div class="section__block">
+            <div class="info-carousel">
+                {% for slide in data.info %}
+                    <div class="{%- if slide.customStyle -%}custom-style--{% endif %} info-carousel__block">
+                        <div class="info-carousel__wrapper">
+                            <div class="info-carousel__visual" style="background-image:url({{path.images.pages}}index/{{slide.visual}})"></div>
+
+                            <div class="info-carousel__info">
+                                <div class="info-carousel__info-header partial-underline-left">
+                                    {{ slide.title }} <span class="text-highlight">{{ slide.titleHighlight }}</span>
+                                </div>
+
+                                <div class="info-carousel__info-desc">
+                                    {{ slide.textDesc }}
+                                </div>
+
+                                {%- if slide.sliderCtas -%}
+                                <div class="info-carousel__info-ctas">
+                                    <a class="button" href="{%- if language == 'my' -%}{{ path.language.my }}booking.html {% else %} {{ path.language.en }}booking.html {% endif %}">
+                                        {{ slide.sliderCtas.text }}
+                                    </a>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="wrapper">
+        <div class="section__block">
+            <div class="section-highlight">
+                <div class="section-highlight__block">
+                    <img src="{{path.images.pages}}index/bg-sec-1.png">
+                </div>
+
+                <div class="section-highlight__block">
+                    <div class="section__block-heading partial-underline-left">
+                        About <span class="text-highlight">Us</span>
+                    </div>
+
+                    <div class="section__block-desc">
+                        I Entry Malaysia Sdn Bhd was founded and managed by individuals experienced in foreign manpower consultancy, Information and Communication Technology (ICT), system integration and IT consultancy, software development, and corporate management.
+                    </div>
+
+                    <div class="section-highlight__block-highlight">
+                        <div class="section-highlight__block-highlight-col">
+                            <span class="section-highlight__block-highlight-number">
+                                18
+                            </span>
+
+                            <span class="section-highlight__block-highlight-text">
+                                hotels nationwide
+                            </span>
+                        </div>
+
+                        <div class="section-highlight__block-highlight-col">
+                            <span class="section-highlight__block-highlight-number">
+                                6000
+                            </span>
+
+                            <span class="section-highlight__block-highlight-text">
+                                customers treated
+                            </span>
+                        </div>
+
+                        <div class="section-highlight__block-highlight-col">
+                            <span class="section-highlight__block-highlight-number">
+                                200
+                            </span>
+
+                            <span class="section-highlight__block-highlight-text">
+                                patients has been cured
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="section-highlight__block-ctas">
+                        <a class="button-text with-icon-- space-right--" href="{%- if language == 'my' -%}{{ path.language.my }}about-us.html {% else %} {{ path.language.en }}about-us.html {% endif %}">
+                            Read more
+
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="wrapper">
+        <div class="section__block">
+            <div class="section-highlight type-2--">
+                <div class="section-highlight__block">
+                    <div class="section__block-heading partial-underline-left">
+                        Our <span class="text-highlight">Hotels</span>
+                    </div>
+
+                    <div class="section__block-desc">
+                        4 Star Hotel converted to become an accommodation center with all the facilities & Licence approved by JTKSM as per ACT446.
+                    </div>
+
+                    <div class="section-highlight__block-ctas">
+                        <a class="button-text with-icon-- space-right--" href="{%- if language == 'my' -%}{{ path.language.my }}our-hotels.html {% else %} {{ path.language.en }}our-hotels.html {% endif %}">
+                            View our hotels
+
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="section-highlight__block">
+                    <div class="hotel-carousel">
+                        {% for hotel in data.hotels %}
+                            <div class="hotel-carousel__block">
+                                <div class="hotel-carousel__wrapper">
+                                    <div class="hotel-carousel__visual" style="background-image:url({{path.images.pages}}index/{{hotel.visual}})"></div>
+
+                                    <div class="hotel-carousel__info">
+                                        <i class="fas fa-map-marker-alt"></i>
+
+                                        {{ hotel.name }}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section highlight-agencies">
+    <div class="wrapper">
+        <div class="section__block">
+            <div class="section__block-heading ta-c partial-underline-middle">
+                Our supported <span class="text-highlight">agencies</span>
+            </div>
+        </div>
+
+        <div class="section__block">
+            <div class="agency-carousel">
+            {% for agency in data.agencies %}
+                <div class="agency-carousel__block">
+                    <div class="agency-carousel__wrapper">
+                        <div class="agency-carousel__visual ta-c"> 
+                            <img src="{{path.images.logos}}{{agency.visual}}">
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{%- endblock %}

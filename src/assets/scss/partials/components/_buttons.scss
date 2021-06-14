@@ -3,19 +3,44 @@
 -----------------------------------------------------------------------------*/
 
 .button {
-    padding: 0.25em 0.5em;
     display: inline-block;
-    background-color: #eee;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
+    background: $orange;
+    padding: 0.6250em 1.875em;
+    border-radius: 20px;
+    color: $white;
 
     &:hover {
-        background-color: #f0f0f0;
+        background-color: $blue-1;
     }
 
     &[disabled],
     &.disabled-- {
         cursor: default;
+    }
+}
+
+.button-text {
+    color: $blue-1;
+    font-weight: $fw-bold;
+    cursor: pointer;
+
+    &:hover {
+        color: $orange;
+    }
+
+    &.with-icon-- {
+        i {
+            margin-right: 5px;
+        }
+
+        &.space-right-- {
+            i {
+                margin-right: 0;
+                margin-left: 5px;
+            }
+        }
     }
 }
