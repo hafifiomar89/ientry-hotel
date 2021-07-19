@@ -9,6 +9,14 @@
     &.no-space-- {
         padding: 0;
     }
+
+    &.no-space-top-- {
+        padding-top: 0;
+    }
+
+    &.no-space-bottom-- {
+        padding-bottom: 0;
+    }
 }
     .section__block {
         + .section__block {

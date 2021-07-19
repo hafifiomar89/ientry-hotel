@@ -11,6 +11,12 @@
         margin-top: 15px;
         background-color: $blue-2;
     }
+
+    &.white-- {
+        &:after {
+            background-color: $white;
+        }
+    }
 }
 
 .partial-underline-middle {

@@ -8,18 +8,24 @@ navigation:
   - 
     link: "our-hotels.html"
     title: "Our Hotels"
+  - 
+    link: "booking.html"
+    title: "Book now"
   -
     link: "helpdesk.html"
     title: "Helpdesk"
 
 info:
   -
-    visual: "slide-4.jpg"
+    visual: "slide-9.jpg"
     title: "Find your ideal hotel for quarantine in"
     titleHighlight: "Malaysia"
     textDesc: "Discover our best choiced Hotels with the best accomodation and KKM certified while you stay."
-    sliderCtas: 
-      text: "BOOK NOW!"
+  -
+    visual: "slide-4.jpg"
+    title: "Discover the best staycation with affordable"
+    titleHighlight: "price!"
+    textDesc: "Choose more than 20 hotels near you!"
   -
     visual: "slide-5.jpg"
     title: "In House"
@@ -34,38 +40,20 @@ info:
     visual: "slide-7.jpg"
     title: "Food"
     titleHighlight: "Delivery"
-    textDesc: "Dont worry ! We deliver meal to your room"
+    textDesc: "Dont worry ! We deliver meal to your room."
   -
     visual: "slide-8.jpg"
     title: "Transportation"
     titleHighlight: "Service"
-    textDesc: "Transportation to your hotel at a affordable price"
+    textDesc: "Transportation to your hotel at a affordable price."
 
 hotels:
   -
-    visual: "hotel-1.jpg"
-    name: "Geno Hotel"
+    visual: "hotel-10.jpg"
+    name: "AnCasa Residences"
   -
-    visual: "hotel-2.jpg"
-    name: "Hilton Garden Inn"
-  -
-    visual: "hotel-3.jpg"
-    name: "Royal Chulan Hotel KL"
-  -
-    visual: "hotel-4.jpg"
-    name: "Sunway Velocity Hotel"
-  -
-    visual: "hotel-5.jpg"
-    name: "Seri Pacific Hotel"
-  -
-    visual: "hotel-6.jpg"
-    name: "Melia Hotel"
-  -
-    visual: "hotel-7.jpg"
-    name: "EQ Hotel"
-  -
-    visual: "hotel-8.jpg"
-    name: "Empire Hotel"
+    visual: "hotel-9.jpg"
+    name: "Klana Beach Resort"
 
 agencies:
   -

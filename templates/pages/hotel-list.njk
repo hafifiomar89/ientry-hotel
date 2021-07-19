@@ -1,0 +1,251 @@
+{% extends 'default.njk' %}
+
+{% block content -%}
+
+<div class="section">
+	<div class="wrapper">
+		<div class="section__block">
+			<div class="section__block-header">
+				<div class="section__block-header-primary">
+					<div class="heading section__block-heading">
+						{{ data.mainHeading }}
+					</div>
+
+					<div class="section__block-desc">
+						{{ data.mainHeaderDesc }}
+					</div>
+				</div>
+
+				<div class="section__block-header-secondary">
+					<div class="section__block-header-image">
+						<img src="{{path.images.pages}}booking-confirm/{{ data.mainHeaderImage }}">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section__block">
+			<div class="room-selections">
+				<div class="room-list">
+					<div class="header-carousel__form-container">
+		                <div class="header-carousel__form-primary">
+		                    <div class="form-layout flex-form--">
+		                        <div class="form-layout__block">
+		                            <div class="field hotel-choice with-icon--">
+		                                <div class="field__control">
+		                                    <span class="field__icon"><i class="fas fa-map-marker-alt"></i></i></span>
+
+		                                    <select class="field__select" required>
+		                                        <option value="" selected disabled hidden>Select your preferred hotel</option>
+		                                        <option value="Klana Beach Resort">Klana Beach Resort</option>
+		                                        <option value="AnCasa Residences">AnCasa Residences</option>
+		                                    </select>
+		                                </div>
+
+		                                <div class="field__ui"></div>
+		                            </div>
+		                        </div>
+
+		                        <div class="form-layout__block col-2--">
+		                            <div class="field with-icon--">
+		                                <div class="field__icon-container">
+		                                    <span class="field__icon"><i class="far fa-calendar-alt"></i></span>
+		                                    
+		                                    <input type="text" id="start-date" name="checkin" class="field__control" autocomplete="off" required placeholder="Check in">
+		                                </div>
+
+		                                <div class="field__ui"></div>
+		                            </div>
+		                        </div>
+
+		                        <div class="form-layout__block col-2--">
+		                            <div class="field with-icon--">
+		                                <div class="field__icon-container">
+		                                    <span class="field__icon"><i class="far fa-calendar-alt"></i></span>
+		                                    
+		                                    <input type="text" id="end-date" name="checkout" class="field__control" autocomplete="off" required placeholder="Check out">
+		                                </div>
+
+		                                <div class="field__ui"></div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            
+					{% for room in data.roomList %}
+					<div class="room-list__wrapper" id="{{ room.id }}">
+						<div class="room-list__container">
+							<div class="room-list__container-col">
+								<a class="modal-trigger-button" href="#/" data-modal="{{ room.dataModal }}">
+									<div class="room-list__container-image" style="background-image: url('{{path.images.pages}}{{ room.thumbnail }}')">
+
+										<i class="fas fa-search-plus"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="room-list__container-col">
+								<div class="room-list__container-tag">
+									{{ room.roomRemaining }} rooms left
+								</div>
+
+								<div class="room-list__container-heading">
+									{{ room.roomHeading }}
+								</div>
+
+								<div class="room-list__container-small-desc">
+									{{ room.roomSmallDesc }}
+								</div>
+
+								<div class="room-list__container-desc">
+									{{ room.roomDesc }}
+								</div>
+
+								<div class="room-list__container-amenities">
+									Max capacity: <b>{{room.roomCapacity}} adult(s)</b>
+
+									<ul>
+										<li><i class="fas fa-wifi"></i></li>
+										<li><i class="fas fa-tv"></i></li>
+										<li><i class="fas fa-stethoscope"></i></li>
+										<li><i class="fas fa-shuttle-van"></i></li>
+										<li><i class="fas fa-utensils"></i></li>
+									</ul>
+								</div>
+
+								<div class="room-list__container-ctas">
+									<div class="room-list__container-price">
+										RM{{ room.price }} <span class="text-small">/ night</span>
+									</div>
+
+									<div class="room-list__container-buttons">
+										<div class="room-list__container-quantity">
+												<span class="input-number-decrement">–</span>
+												<input class="input-number" type="text" value="1" min="0" max="6" disabled>
+												<span class="input-number-increment">+</span>
+										</div>
+
+										<div class="room-list__container-cta">
+											<button class="button select-room">Select Room</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+
+				<div class="room-reservation">
+					<div class="room-reservation__wrapper">
+						<div class="room-reservation__heading">
+							Reservation Details
+						</div>
+
+						<div class="room-reservation__details">
+							<div class="room-reservation__details-wrapper">
+								<div class="room-reservation__details-title">
+									Hotel Selection:
+								</div>
+
+								<div class="room-reservation__details-content">
+									AnCasa Residences
+								</div>
+							</div>
+
+							<div class="room-reservation__details-wrapper">
+								<div class="room-reservation__details-title">
+									Check In:
+								</div>
+
+								<div class="room-reservation__details-content">
+									16 June, 2021
+								</div>
+							</div>
+
+							<div class="room-reservation__details-wrapper">
+								<div class="room-reservation__details-title">
+									Check out:
+								</div>
+
+								<div class="room-reservation__details-content">
+									18 June, 2021
+								</div>
+							</div>
+						</div>
+
+						<div class="room-reservation__room-details">
+							<ol class="room-reservation__room-details-list">
+								<li>
+									<div class="room-reservation__room-details-wrapper">
+										<div class="room-reservation__room-details-name">
+											One bedroom deluxe apartment
+										</div>
+
+										<div class="room-reservation__room-details-total">
+											2 room(s)
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="room-reservation__room-details-wrapper">
+										<div class="room-reservation__room-details-name">
+											Two bedroom (shared rooms) deluxe apartment
+										</div>
+
+										<div class="room-reservation__room-details-total">
+											1 room(s)
+										</div>
+									</div>
+								</li>
+							</ol>
+						</div>
+
+						<div class="room-reservation__room-total">
+							<div class="room-reservation__room-total-wrapper">
+								<div class="room-reservation__room-total-name">
+									Total
+								</div>
+
+								<div class="room-reservation__room-details-total">
+									RM2,220.00
+								</div>
+							</div>
+						</div>
+
+						<div class="room-reservation__ctas">
+							<a class="button" href="{%- if language == 'my' -%}{{ path.language.my }}booking.html {% else %} {{ path.language.en }}booking.html {% endif %}">Next</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% for modal in data.roomList %}
+	<div class="modal slick--" id="{{ modal.dataModal }}">
+		<div class="modal__bg">
+			<div class="modal__card">
+				<div class="modal__close">
+					<i class="fas fa-times"></i>
+				</div>
+
+				<div class="modal__body">
+					<div class="room-carousel no-margin--">
+						{% for image in modal.roomImage %}
+						<div class="room-carousel__block">
+							<img src="{{path.images.pages}}{{ image }}">
+						</div>
+						{%- endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endfor %}
+	
+
+{%- endblock %}

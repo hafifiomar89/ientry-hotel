@@ -7,6 +7,9 @@ navigation:
   - 
     link: "our-hotels.html"
     title: "Our Hotels"
+  - 
+    link: "booking.html"
+    title: "Book now"
   -
     link: "helpdesk.html"
     title: "Helpdesk"

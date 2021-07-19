@@ -45,10 +45,15 @@
                             <a class="{%- if page_title == nav.title -%} active {% endif %} site-header__nav-item" href="{%- if language == 'my' -%}{{nav.link}} {% else %} {{nav.link}} {% endif %}">{{nav.title}}</a>
                         {% endfor %}
 
-                        <div class="site-header__language-toggle">
+                        {# <div class="site-header__language-toggle">
+                            <a href="{{ path.language.my }}" class="{%- if language == 'my' -%} site-header_language-toggle-item active-- {% else %} site-header_language-toggle-item {%- endif -%}">Login</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
+                            <a href="{{ path.language.en }}" class="{%- if language != 'my' -%} site-header_language-toggle-item active-- {% else %} site-header_language-toggle-item {%- endif -%}">Register</a>
+                        </div> #}
+
+                        {# <div class="site-header__language-toggle">
                             <a href="{{ path.language.my }}" class="{%- if language == 'my' -%} site-header_language-toggle-item active-- {% else %} site-header_language-toggle-item {%- endif -%}">Bahasa</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
                             <a href="{{ path.language.en }}" class="{%- if language != 'my' -%} site-header_language-toggle-item active-- {% else %} site-header_language-toggle-item {%- endif -%}">English</a>
-                        </div>
+                        </div> #}
                     </div>
 
                     <span class="hamburger hamburger--collapse navbar__item">
@@ -117,11 +122,11 @@
                     </span>
 
                     <a href="#facebook" class="site-footer__socmed-link">
-                        <img src="{{ path.images.icons }}facebook.png" alt="Facebook" class="site-footer__socmed-icon">
+                        <i class="fab fa-facebook-square site-footer__socmed-icon"></i>
                     </a>
 
                     <a href="#instagram" class="site-footer__socmed-link">
-                        <img src="{{ path.images.icons }}instagram.png" alt="Instagram" class="site-footer__socmed-icon">
+                        <i class="fab fa-instagram site-footer__socmed-icon"></i>
                     </a>
                 </span>
             </div>

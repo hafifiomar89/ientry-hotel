@@ -1,13 +1,15 @@
-$('.info-carousel').slick({
-  	dots: true,
+$('.header-carousel__slider').slick({
+  	dots: false,
   	arrows: false,
   	infinite: true,
-  	speed: 300,
+  	speed: 1000,
   	slidesToShow: 1,
   	slidesToScroll: 1,
     adaptiveHeight: true,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
+    fade: true,
+    pauseOnHover:false
 });
 
 $('.hotel-carousel').slick({
@@ -15,7 +17,7 @@ $('.hotel-carousel').slick({
     arrows: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     adaptiveHeight: true,
     autoplay: true,
@@ -61,4 +63,16 @@ $('.agency-carousel').slick({
             }
         }
     ]
+});
+
+$('.room-carousel').slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    autoplay: false,
+    autoplaySpeed: 4000
 });

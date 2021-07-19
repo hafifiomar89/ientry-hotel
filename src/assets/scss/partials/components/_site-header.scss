@@ -13,7 +13,7 @@
     position: relative;
 
     &.open-- {
-    	background-color: rgba(226, 251, 255, 0.8);
+    	background-color: rgba(226, 251, 255, 1);
     	transition: background-color .4s;
     }
 }
@@ -45,7 +45,7 @@
 		    left: 0;
 		    height: calc(100vh - 107px);
 		    width: 100vw;
-		    background-color: rgba(226, 251, 255, 0.8);
+		    background-color: rgba(226, 251, 255, 1);
 		    transition: background-color .4s; 
     	}
 	}
@@ -58,6 +58,10 @@
 			&:hover,
 			&.active {
 				color: $orange;
+			}
+
+			&:last-child {
+				margin: 0;
 			}
 		}
 		.site-header__language-toggle {
@@ -172,7 +176,7 @@
 	}
 	.site-header__logo {
 		img {
-			width: auto;
+			width: 70px;
 		}
 	}
     .site-header__block {

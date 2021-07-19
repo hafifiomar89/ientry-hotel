@@ -1,0 +1,109 @@
+title: "Ancasa Residences"
+
+navigation:
+  - 
+    link: "../about-us.html"
+    title: "About us"
+  # - 
+  #   link: "../our-hotels.html"
+  #   title: "Our Hotels"
+  # - 
+  #   link: "../booking.html"
+  #   title: "Book now"
+  -
+    link: "helpdesk.html"
+    title: "Helpdesk"
+
+mainHeading: "Choose your room"
+mainHeaderDesc: "Featuring elegant interiors with Seaview or garden views, the rooms offers comfort and privacy, with a full array of amenities for a relaxing stay."
+mainHeaderImage: "gfx-header.png"
+
+roomList:
+  -
+    id: "ancasa"
+    thumbnail: "our-hotels/ancasa-residences/room1/thumbnail.jpg"
+    roomRemaining: "6"
+    roomHeading: "One Bedroom Deluxe Apartment"
+    roomSmallDesc: "*As low as RM150.00 per guest"
+    roomDesc: "Featuring elegant interiors with Seaview or garden views, the rooms offers comfort and privacy, with a full array of amenities for a relaxing stay."
+    roomCapacity: "2"
+    price: "300.00"
+    quantities:
+      -
+        "1"
+      -
+        "2"
+      -
+        "3"
+      -
+        "4"
+      -
+        "5"
+      -
+        "6"
+  -
+    id: "ancasa"
+    thumbnail: "our-hotels/ancasa-residences/room2/thumbnail.jpg"
+    roomRemaining: "6"
+    roomHeading: "Two-Bedroom (Shared Rooms) Deluxe Apartment"
+    roomSmallDesc: "*As low as RM127.00 per guest"
+    roomDesc: "Ideal for small families of up to 4 people in need of a comfortable living space. Featuring a master bedroom, additional bedroom for the kids, separate living/dining area, two full use bathrooms and kitchenette area."
+    roomCapacity: "4"
+    price: "510.00"
+    quantities:
+      -
+        "1"
+      -
+        "2"
+      -
+        "3"
+      -
+        "4"
+      -
+        "5"
+      -
+        "6"
+  -
+    id: "ancasa"
+    thumbnail: "our-hotels/ancasa-residences/room3/thumbnail.jpg"
+    roomRemaining: "6"
+    roomHeading: "Three-Bedroom (Shared Rooms) Deluxe Apartment"
+    roomSmallDesc: "*As low as RM121.00 per guest"
+    roomDesc: "Ideal for larger groups or families of up to 6 people. It has a master bedroom, 2 additional smaller bedrooms (2 twin bed,), separate living/dining area, 2 full size bathrooms, and kitchenette area."
+    roomCapacity: "6"
+    price: "730.00"
+    quantities:
+      -
+        "1"
+      -
+        "2"
+      -
+        "3"
+      -
+        "4"
+      -
+        "5"
+      -
+        "6"
+  -
+    id: "ancasa"
+    thumbnail: "our-hotels/ancasa-residences/room4/thumbnail.jpg"
+    roomRemaining: "4"
+    roomHeading: "Single Occupany Room"
+    roomSmallDesc: "*As low as RM240.00 for single guest"
+    roomDesc: "With an accent on classic modernity, which adheres to the design tenets of simplicity and chic elegance, the new rooms showcase the finest materials and craftsmanship."
+    roomCapacity: "1"
+    price: "240.00"
+    quantities:
+      -
+        "1"
+      -
+        "2"
+      -
+        "3"
+      -
+        "4"
+      -
+        "5"
+      -
+        "6"

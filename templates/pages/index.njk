@@ -2,35 +2,85 @@
 
 {% block content -%}
 
-<div class="section">
-    <div class="wrapper">
-        <div class="section__block">
-            <div class="info-carousel">
-                {% for slide in data.info %}
-                    <div class="{%- if slide.customStyle -%}custom-style--{% endif %} info-carousel__block">
-                        <div class="info-carousel__wrapper">
-                            <div class="info-carousel__visual" style="background-image:url({{path.images.pages}}index/{{slide.visual}})"></div>
+<div class="section no-space-top--  header-carousel">
+    <div class="header-carousel__slider">
+        {% for slide in data.info %}
+            <div class="{%- if slide.customStyle -%}custom-style--{% endif %} header-carousel__slider-block" style="background-image:url({{path.images.pages}}index/{{slide.visual}})">
+                <div class="wrapper">
+                    <div class="header-carousel__slider-info">
+                        <div class="header-carousel__slider-header  partial-underline-left white--">
+                            {{ slide.title }} <span class="text-highlight">{{ slide.titleHighlight }}</span>
+                        </div>
 
-                            <div class="info-carousel__info">
-                                <div class="info-carousel__info-header partial-underline-left">
-                                    {{ slide.title }} <span class="text-highlight">{{ slide.titleHighlight }}</span>
+                        <div class="header-carousel__slider-desc">
+                            {{ slide.textDesc }}
+                        </div>
+
+                        {%- if slide.sliderCtas -%}
+                        <div class="header-carousel__slider-ctas">
+                            <a class="button" href="{%- if language == 'my' -%}{{ path.language.my }}select-room.html {% else %} {{ path.language.en }}select-room.html {% endif %}">
+                                {{ slide.sliderCtas.text }}
+                            </a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="header-carousel__form">
+        <div class="wrapper">
+            <div class="header-carousel__form-container">
+                <div class="header-carousel__form-primary">
+                    <div class="form-layout flex-form--">
+                        <div class="form-layout__block">
+                            <div class="field hotel-choice with-icon--">
+                                <div class="field__control">
+                                    <span class="field__icon"><i class="fas fa-hotel"></i></i></span>
+
+                                    <select class="field__select" required>
+                                        <option value="" selected disabled hidden>Select your preferred hotel</option>
+                                        <option value="Klana Beach Resort">Klana Beach Resort</option>
+                                        <option value="AnCasa Residences">AnCasa Residences</option>
+                                    </select>
                                 </div>
 
-                                <div class="info-carousel__info-desc">
-                                    {{ slide.textDesc }}
+                                <div class="field__ui"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-layout__block col-2--">
+                            <div class="field with-icon--">
+                                <div class="field__icon-container">
+                                    <span class="field__icon"><i class="far fa-calendar-alt"></i></span>
+                                    
+                                    <input type="text" id="start-date" name="checkin" class="field__control" autocomplete="off" required placeholder="Check in">
                                 </div>
 
-                                {%- if slide.sliderCtas -%}
-                                <div class="info-carousel__info-ctas">
-                                    <a class="button" href="{%- if language == 'my' -%}{{ path.language.my }}booking.html {% else %} {{ path.language.en }}booking.html {% endif %}">
-                                        {{ slide.sliderCtas.text }}
-                                    </a>
+                                <div class="field__ui"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-layout__block col-2--">
+                            <div class="field with-icon--">
+                                <div class="field__icon-container">
+                                    <span class="field__icon"><i class="far fa-calendar-alt"></i></span>
+                                    
+                                    <input type="text" id="end-date" name="checkout" class="field__control" autocomplete="off" required placeholder="Check out">
                                 </div>
-                                {% endif %}
+
+                                <div class="field__ui"></div>
                             </div>
                         </div>
                     </div>
-                {% endfor %}
+                </div>
+
+                <div class="header-carousel__form-secondary">
+                    <a class="header-carousel__form-ctas" href="{%- if language == 'my' -%}{{ path.language.my }}select-room.htm {% else %} {{ path.language.en }}select-room.html {% endif %}">
+                        SEARCH ROOMS
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -112,8 +162,8 @@
                     </div>
 
                     <div class="section-highlight__block-ctas">
-                        <a class="button-text with-icon-- space-right--" href="{%- if language == 'my' -%}{{ path.language.my }}our-hotels.html {% else %} {{ path.language.en }}our-hotels.html {% endif %}">
-                            View our hotels
+                        <a class="button-text with-icon-- space-right--" href="{%- if language == 'my' -%}{{ path.language.my }}our-hotels.html {% else %} {{ path.language.en }}select-room.html {% endif %}">
+                            Reserve your room
 
                             <i class="fas fa-arrow-right"></i>
                         </a>

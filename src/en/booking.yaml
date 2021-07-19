@@ -7,12 +7,16 @@ navigation:
   - 
     link: "our-hotels.html"
     title: "Our Hotels"
+  - 
+    link: "booking.html"
+    title: "Book now"
   -
     link: "helpdesk.html"
     title: "Helpdesk"
 
 mainHeading: "Fill in your"
 mainHeadingHighlight: "details"
+mainHeaderDesc: "Featuring elegant interiors with Seaview or garden views, the rooms offers comfort and privacy, with a full array of amenities for a relaxing stay."
 mainHeaderImage: "gfx-header.png"
 
 subHeading1: "Personal"
