@@ -5,10 +5,7 @@ navigation:
     link: "about-us.html"
     title: "About us"
   - 
-    link: "our-hotels.html"
-    title: "Our Hotels"
-  - 
-    link: "booking.html"
+    link: "select-room.html"
     title: "Book now"
   -
     link: "helpdesk.html"
@@ -41,10 +38,12 @@ subHeadingHighlight6: "Guest"
 subHeading7: "Amount to"
 subHeadingHighlight7: "pay"
 
-subHeading8: "Please scan the"
-subHeadingHighlight8: "QR Code"
+subHeading8: "Select your"
+subHeadingHighlight8: "payment option"
 
 subHeading9: "Attach"
 subHeadingHighlight9: "Payment slip"
 
 paymentTitle: "Steps for payment"
+
+attachPaymentTitle: "Attach payment slip"

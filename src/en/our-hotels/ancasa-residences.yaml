@@ -4,12 +4,9 @@ navigation:
   - 
     link: "../about-us.html"
     title: "About us"
-  # - 
-  #   link: "../our-hotels.html"
-  #   title: "Our Hotels"
-  # - 
-  #   link: "../booking.html"
-  #   title: "Book now"
+  - 
+    link: "../select-room.html"
+    title: "Book now"
   -
     link: "helpdesk.html"
     title: "Helpdesk"

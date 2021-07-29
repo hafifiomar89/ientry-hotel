@@ -2,19 +2,17 @@ title: "Select Rooms"
 
 navigation:
   - 
-    link: "../about-us.html"
+    link: "about-us.html"
     title: "About us"
-  # - 
-  #   link: "../our-hotels.html"
-  #   title: "Our Hotels"
-  # - 
-  #   link: "../booking.html"
-  #   title: "Book now"
+  - 
+    link: "select-room.html"
+    title: "Book now"
   -
     link: "helpdesk.html"
     title: "Helpdesk"
 
-mainHeading: "Choose your room"
+mainHeading: "Choose your"
+mainHeadingHighlight: "room"
 mainHeaderDesc: "Featuring elegant interiors with Seaview or garden views, the rooms offers comfort and privacy, with a full array of amenities for a relaxing stay."
 mainHeaderImage: "gfx-header.png"
 

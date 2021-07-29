@@ -673,14 +673,6 @@
 										<div class="form-layout">
 											<div class="form-layout__block">
 												<div class="field checkbox--">
-													<input class="field__checkbox" id="rtpcr" type="checkbox" value="RT-PCR Test">
-													
-													<label for="rtpcr">RT-PCR Test (RM150)</label>
-												</div>
-											</div>
-
-											<div class="form-layout__block">
-												<div class="field checkbox--">
 													<input class="field__checkbox" id="pickupAddress" type="checkbox" value="Pickup service">
 													
 													<label for="pickupAddress">Pickup service</label>
@@ -812,7 +804,15 @@
 				        </div>
 
 				        <div class="room-reservation">
-							<div class="room-reservation__wrapper">
+				        	<div class="room-reservation__wrapper">
+				        		<div class="room-reservation__mobile">
+					        		<div class="room-reservation__heading">
+										Reservation Details
+
+										<i class="fas fa-chevron-down"></i>
+									</div>
+								</div>
+
 								<div class="room-reservation__heading">
 									Reservation Details
 								</div>
@@ -891,6 +891,10 @@
 
 								<div class="room-reservation__ctas">
 									<a class="button" href="{%- if language == 'my' -%}{{ path.language.my }}booking-confirm.html {% else %} {{ path.language.en }}booking-confirm.html {% endif %}">Next</a>
+
+									<a class="button-text" href="{%- if language == 'my' -%}{{ path.language.my }}select-room.html {% else %} {{ path.language.en }}select-room.html {% endif %}">
+                                        {%- if language == 'my' -%} Edit details {% else %} Edit details {%- endif -%}
+                                    </a>
 								</div>
 							</div>
 						</div>
@@ -900,5 +904,36 @@
 		</form>
 	</div>
 </div>
+
+{%- endblock %}
+
+{% block scripts -%}
+
+    <script>
+        $(document).ready(function() {
+			
+			var scrollHeight = true;
+
+            if($(".room-reservation__wrapper").length > 0) {
+                $(window).on('scroll.paymentBreakdown resize.paymentBreakdown', function() {
+                    if (scrollHeight == false) {
+                        return;
+                    } if ($(window).scrollTop() + $(window).outerHeight() >= $(".room-reservation__details-wrapper").offset().top) {
+                        $(".room-reservation__wrapper").addClass("toggle-payment-header");
+                    } else {
+                        $(".room-reservation__wrapper").removeClass("toggle-payment-header");
+                    }
+                });
+            }
+
+            $(window).triggerHandler('scroll.paymentBreakdown');
+
+            $(".room-reservation__mobile").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".room-reservation__wrapper").offset().top
+                }, 300);
+            });
+        });
+    </script>
 
 {%- endblock %}

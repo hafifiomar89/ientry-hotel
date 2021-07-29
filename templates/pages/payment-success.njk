@@ -28,7 +28,11 @@
 
 			<div class="section__block" style="text-align: center;">
 				<a class="button" href="{%- if language == 'my' -%} {% else %} {{ path.language.en }} {% endif %}">
-                    {%- if language == 'my' -%} Kembali ke halaman utama {% else %} Back to homepage {%- endif -%}
+                    {%- if language == 'my' -%} Kembali ke halaman utama {% else %} Back to home {%- endif -%}
+                </a>
+
+                <a class="button-text" href="{%- if language == 'my' -%}{{ path.language.my }}select-room.html {% else %} {{ path.language.en }}select-room.html {% endif %}" style="margin-left: 15px;">
+                    {%- if language == 'my' -%} Print your receipt {% else %} Print receipt {%- endif -%}
                 </a>
             </div>
 		</form>

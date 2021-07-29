@@ -404,6 +404,22 @@
 							{{ data.subHeading8 }} <span class="text-highlight">{{ data.subHeadingHighlight8 }}</span>
 						</div>
 
+						<div class="form-layout" style="margin-bottom: 20px;">
+							<div class="form-layout__block">
+								<div class="field">
+									<div class="field__control">
+										<select class="field__select" id="payment" required>
+											<option value="Pay via DuitNow">Pay via DuitNow</option>
+											<option value="Pay via FPX">Pay via FPX</option>
+											<option value="Pay via Credit Card">Pay via Credit Card</option>
+										</select>
+									</div>
+
+									<div class="field__ui"></div>
+								</div>
+							</div>
+						</div>
+
 						<div class="booking-payment">
 							<div class="booking-payment__block">
 								<img src="{{path.images.pages}}booking-confirm/qr-code.jpg">
@@ -421,20 +437,16 @@
 									<li>Attach your payment slip</li>
 									<li>Click <span class="text-highlight">submit details</span> to complete the process</li>
 								</ol>
-							</div>
-						</div>
-					</div>
 
-					<div class="section__block">
-						<div class="subheading section__block-subheading">
-							{{ data.subHeading9 }} <span class="text-highlight">{{ data.subHeadingHighlight9 }}</span>
-						</div>
+								<div class="booking-payment__title" style="margin-top: 35px;">
+									{{ data.attachPaymentTitle }}
+								</div>
 
-						<div class="booking-form__secondary">
-							<div class="form-layout flex-form-- type-2--">
-								<div class="form-layout__block full-width--">
-									<div class="field">
-										<input type="file">
+								<div class="form-layout flex-form-- type-2--" style="margin-top:1px;">
+									<div class="form-layout__block full-width--">
+										<div class="field">
+											<input type="file">
+										</div>
 									</div>
 								</div>
 							</div>
@@ -475,11 +487,11 @@
 								<div class="total-amount__ctas">
 									<div class="total-amount__ctas">
 	                                    <a class="button" href="{%- if language == 'my' -%}{{ path.language.my }}payment-success.html {% else %} {{ path.language.en }}payment-success.html {% endif %}">
-	                                        {%- if language == 'my' -%} Bayar dengan QR Pay {% else %} Submit details {%- endif -%}
+	                                        {%- if language == 'my' -%} Submit details {% else %} Submit details {%- endif -%}
 	                                    </a>
 
 	                                    <a class="button-text" href="{%- if language == 'my' -%}{{ path.language.my }}booking.html {% else %} {{ path.language.en }}booking.html {% endif %}">
-	                                        {%- if language == 'my' -%} Sudah mendaftar bilik? {% else %} Edit details {%- endif -%}
+	                                        {%- if language == 'my' -%} Edit details {% else %} Edit details {%- endif -%}
 	                                    </a>
 		                            </div>
 		                        </div>

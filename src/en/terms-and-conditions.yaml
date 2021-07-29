@@ -5,10 +5,7 @@ navigation:
     link: "about-us.html"
     title: "About us"
   - 
-    link: "our-hotels.html"
-    title: "Our Hotels"
-  - 
-    link: "booking.html"
+    link: "select-room.html"
     title: "Book now"
   -
     link: "helpdesk.html"

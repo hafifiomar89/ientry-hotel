@@ -49,3 +49,31 @@
 		}
 	}
 }
+
+.room-reservation__mobile {
+	background: $orange;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    cursor: pointer;
+
+    .room-reservation__heading {
+    	display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+    	font-size: 14px;
+    }
+
+    @media($bp-md) {
+    	display: none;
+    }
+}
+
+.room-reservation__wrapper.toggle-payment-header {
+	.room-reservation__mobile {
+		display: none;
+	}
+}
