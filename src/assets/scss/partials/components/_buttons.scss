@@ -3,44 +3,44 @@
 -----------------------------------------------------------------------------*/
 
 .button {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    background: $orange;
-    padding: 0.6250em 1.875em;
-    border-radius: 20px;
-    color: $white;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background: $orange;
+  padding: 0.625em 1.875em;
+  border-radius: 20px;
+  color: $white;
 
-    &:hover {
-        background-color: $blue-1;
-    }
+  &:hover {
+    background-color: $blue-1;
+  }
 
-    &[disabled],
-    &.disabled-- {
-        cursor: default;
-    }
+  &[disabled],
+  &.disabled-- {
+    cursor: default;
+  }
 }
 
 .button-text {
-    color: $blue-1;
-    font-weight: $fw-bold;
-    cursor: pointer;
+  color: $blue-1;
+  font-weight: $fw-bold;
+  cursor: pointer;
 
-    &:hover {
-        color: $orange;
+  &:hover {
+    color: $orange;
+  }
+
+  &.with-icon-- {
+    i {
+      margin-right: 5px;
     }
 
-    &.with-icon-- {
-        i {
-            margin-right: 5px;
-        }
-
-        &.space-right-- {
-            i {
-                margin-right: 0;
-                margin-left: 5px;
-            }
-        }
+    &.space-right-- {
+      i {
+        margin-right: 0;
+        margin-left: 5px;
+      }
     }
+  }
 }

@@ -3,22 +3,32 @@
 //-----------------------------------------------------------------------------
 
 @mixin placeholders() {
-    /* autoprefixer: off */
-   &::-webkit-input-placeholder { @content; }
-       &::-ms-input-placeholder { @content; }
-        &:-ms-input-placeholder { @content; }
-            &::-moz-placeholder { @content; }
-             &:-moz-placeholder { @content; }
+  /* autoprefixer: off */
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-ms-input-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
 }
 
 @mixin hidden-accessible() {
-    width: 0;
-    height: 0;
-    display: block;
-    position: absolute;
-    clip: rect(0, 0, 0, 0);
-    opacity: 0;
-    overflow: hidden;
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  opacity: 0;
+  overflow: hidden;
 }
 
 // @mixin clearfix() {

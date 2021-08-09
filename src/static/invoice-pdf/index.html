@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>I-Entry Hotel Invoice</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="../../../favicon.ico">
+    <style>
+        /* Fonts */
+
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+        /* Starters */
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        html {
+            color: #414042;
+            font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+            font-size: 10pt;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        /* Header */
+
+        .header {
+            text-align: right;
+        }
+
+            .header__logo {
+                width: 27.87mm;
+                height: 40.22mm;
+            }
+
+        /* Description */
+
+        .desc {
+            margin-left: 10mm;
+            text-align: right;
+            flex: 1;
+        }
+
+            .desc__heading {
+                color: #005399;
+                font-weight: 900;
+                font-size: 28pt;
+                margin: 0;
+                line-height: 1;
+            }
+            .desc__paragraph {
+                margin-bottom: 0;
+            }
+                .desc__company-name {
+                    font-size: 14pt;
+                    font-weight: 700;
+                    display: block;
+                    margin-bottom: 5pt;
+                }
+        
+        .invoice {
+            background-color: #9baec8;
+            padding: 5pt;
+            width: 100%;
+            border-radius: 1mm;
+            margin-top: 5mm;
+            -webkit-print-color-adjust: exact;
+        }
+            .invoice__container {
+                width: 100%;
+            }
+            .invoice__container tr > td {
+                width: 50%;
+            }
+            .invoice__container tr > td > table {
+                width: 100%;
+            }
+            .invoice__container tr tr td:nth-child(1) {
+                width: 15mm;
+            }
+            .invoice__container tr tr td:nth-child(2) {
+                width: 25mm;
+            }
+
+        .invoice-recipient {
+            margin-top: 5mm;
+        }
+            .invoice-recipient__header {
+                font-weight: 700;
+                margin-bottom: 5pt;
+            }
+        
+        .booking-details {
+            width: 100%;
+            margin-top: 5mm;
+        }
+        .booking-details__header {
+            font-weight: 700;
+            margin-bottom: 5pt;
+        }
+        .booking-details__container {
+            padding: 5pt;
+            width: 100%;
+            border-radius: 1mm;
+            border: 1pt solid #bcbec0;
+        }
+        .booking-details table {
+            width: 100%;
+        }
+            .booking-details tr > td {
+                width: 50%;
+            }
+            .booking-details tr > td > table {
+                width: 100%;
+            }
+            .booking-details tr tr td:nth-child(1) {
+                width: 30%;
+            }
+            .booking-details tr tr td:nth-child(2) {
+                width: 70%;
+            }
+        
+        .room-details {
+            width: 100%;
+            margin-top: 5mm;
+        }
+            .room-details__header {
+                font-weight: 700;
+                margin-bottom: 5pt;
+            }
+            .room-details__container table,
+            .room-details__container th,
+            .room-details__container tr,
+            .room-details__container td {
+                padding: 0;
+                margin: 0;
+                border-spacing: 0;
+            }
+            .room-details__container table {
+                border: 1pt solid #ccc;
+                border-radius: 1mm;
+                width: 100%;
+            }
+            .room-details__container thead {
+                background-color: #bcbec0;
+                -webkit-print-color-adjust: exact;
+            }
+            .room-details__container th {
+                vertical-align: top;;
+            }
+            .room-details__container th,
+            .room-details__container td {
+                padding: 5pt;
+                text-align: center;
+                border-left: 1px solid #ccc;
+                border-top: 1px solid #ccc;
+            }
+            .room-details__container th:first-child,
+            .room-details__container td:first-child {
+                text-align: left;
+                border-left: 0;
+            }
+            .room-details__container td {
+                font-size: 9pt;
+            }
+
+        /* Page */
+
+        .page {
+            max-width: 142mm;
+            padding: 15mm 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        /* Print */
+
+        @page {
+            size: A4;
+            margin: 0;
+            margin-top: 20mm;
+        }
+
+        @media print {
+            html, body {
+                width: 210mm;
+                height: 297mm;
+            }
+            .page {
+                padding-top: 0;
+            }
+            .voucher {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <img src="logo.png" alt="I-Entry Hotel" class="header__logo">
+        </div>
+
+        <div class="desc">
+            <h1 class="desc__heading">
+                UNPAID
+            </h1>
+
+            <p class="desc__paragraph">
+                <span class="desc__company-name">I-Entry Hotel (M) Sdn. Bhd.</span>
+                <b>Bank Account:</b> 7627107441<br>
+                <b>Bank Name:</b> Public Bank Berhad<br>
+                <b>Bank Code:</b> 159
+            </p>
+        </div>
+
+        <div class="invoice">
+            <table class="invoice__container">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><b>Invoice No.</b></td>
+                                <td>#005399</td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td>
+                        <table>
+                            <tr>
+                                <td><b>Booking ID</b></td>
+                                <td>31234567</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><b>Invoice Date</b></td>
+                                <td>3/8/2021</td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td>
+                        <table>
+                            <tr>
+                                <td><b>Due Date</b></td>
+                                <td>3/8/20217</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="invoice-recipient">
+            <div class="invoice-recipient__header">
+                Invoice to:
+            </div>
+
+            <div class="invoice-recipient__name">
+                Mohamad Hafifi bin Omar
+            </div>
+
+            <div class="invoice-recipient__address">
+                D-36-02, Residensi Sky Gandaria, Jalan Sentul Utama,<br>
+                W.P. Kuala Lumpur, 52100<br>
+                Malaysia
+            </div>
+        </div>
+
+        <div class="booking-details">
+            <div class="booking-details__header">
+                Booking Information:
+            </div>
+            
+            <div class="booking-details__container">
+                <table>
+                    <tr valign="top">
+                        <td>
+                            <table>
+                                <tr valign="top">
+                                    <td><b>Hotel</b></td>
+                                    <td>AnCasa Residence, Port Dickson</td>
+                                </tr>
+                            </table>
+                        </td>
+    
+                        <td>
+                            <table>
+                                <tr valign="top">
+                                    <td><b>Address</b></td>
+                                    <td>KM13, Jalan Pantai, Teluk Kemang, Si Rusa, Port Dickson, Malaysia, 71050</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+    
+                    <tr valign="top">
+                        <td>
+                            <table>
+                                <tr valign="top">
+                                    <td><b>Arrival</b></td>
+                                    <td>3/8/2021</td>
+                                </tr>
+                            </table>
+                        </td>
+    
+                        <td>
+                            <table>
+                                <tr valign="top">
+                                    <td><b>Departure</b></td>
+                                    <td>10/8/20217</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="room-details">
+            <div class="room-details__header">
+                Room Details:
+            </div>
+            
+            <div class="room-details__container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Room Type</th>
+                            <th>Number of Rooms</th>
+                            <th>Number of Extra Beds</th>
+                            <th>Number of Guest</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>ONE BEDROOM DELUXE APARTMENT</td>
+                            <td>1</td>
+                            <td>-</td>
+                            <td>2</td>
+                            <td>RM8,000.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>TWO-BEDROOM (SHARED ROOMS) DELUXE APARTMENT</td>
+                            <td>1</td>
+                            <td>-</td>
+                            <td>2</td>
+                            <td>RM8,000.00</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" style="text-align: right">
+                                <b>Grand Total</b>
+                            </td>
+                            <td>
+                                RM16,000.00
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="room-details">
+            <div class="room-details__header">
+                Transactions:
+            </div>
+            
+            <div class="room-details__container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Transaction Date</th>
+                            <th>Gateway</th>
+                            <th>Transaction ID</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!-- Enable this if payment has been made
+                        <tr>
+                            <td>3/8/2021</td>
+                            <td>Credit Card / Bank Transfer (FPX)</td>
+                            <td>739222716</td>
+                            <td>RM16,000.00</td>
+                        </tr> -->
+
+                        <tr>
+                            <td colspan="4" style="text-align: center;">No Related Transactions Found</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" style="text-align: right">
+                                <b>Balance</b>
+                            </td>
+                            <td>
+                                RM16,000.00
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="room-details">
+            <div class="room-details__header">
+                Important Reminders
+            </div>
+
+            <p style="margin-top: 0;">
+                For payment through bank transfer, please write above invoice number onto your receipt and send a copy to billing@ientryhotel.com. Thank you!
+            </p>
+
+            <p style="text-align: center; margin-top: 10mm; font-size: 8pt;">
+                I-ENTRY HOTEL (M) SDN. BHD. Unit 410, Block A, Level 4, Kelana Business Centre, 97, Jalan SS7/2, Kelana Jaya, 47301 Petaling Jaya, Selangor
+            </p>
+        </div>
+    </div>
+</body>
+</html>

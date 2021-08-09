@@ -2,60 +2,46 @@ title: "Home"
 folder: "our-hotels"
 
 navigation:
-  - 
-    link: "about-us.html"
+  - link: "about-us.html"
     title: "About us"
-  - 
-    link: "select-room.html"
+  - link: "select-room.html"
     title: "Book now"
-  -
-    link: "helpdesk.html"
+  - link: "helpdesk.html"
     title: "Helpdesk"
 
 info:
-  -
-    visual: "slide-9.jpg"
+  - visual: "slide-9.jpg"
     title: "Find your ideal hotel for quarantine in"
     titleHighlight: "Malaysia"
     textDesc: "Discover our best choiced Hotels with the best accomodation and KKM certified while you stay."
-  -
-    visual: "slide-4.jpg"
+  - visual: "slide-4.jpg"
     title: "Discover the best staycation with affordable"
     titleHighlight: "price!"
     textDesc: "Choose more than 20 hotels near you!"
-  -
-    visual: "slide-5.jpg"
+  - visual: "slide-5.jpg"
     title: "In House"
     titleHighlight: "Doctor"
     textDesc: "Relax! If you need a Doctor, We will be there for U."
-  -
-    visual: "slide-6.jpg"
+  - visual: "slide-6.jpg"
     title: "COVID-19"
     titleHighlight: "Screening"
     textDesc: "Before you check out, We advise you to take the FINAL COVID-19 SCREENING TEST for the safety of your family and friends NEW! Covid-19 RT-PCR Deep Throat Saliva Test now available at affordable price"
-  -
-    visual: "slide-7.jpg"
+  - visual: "slide-7.jpg"
     title: "Food"
     titleHighlight: "Delivery"
     textDesc: "Dont worry ! We deliver meal to your room."
-  -
-    visual: "slide-8.jpg"
+  - visual: "slide-8.jpg"
     title: "Transportation"
     titleHighlight: "Service"
     textDesc: "Transportation to your hotel at a affordable price."
 
 hotels:
-  -
-    visual: "hotel-10.jpg"
+  - visual: "hotel-10.jpg"
     name: "AnCasa Residences"
-  -
-    visual: "hotel-9.jpg"
+  - visual: "hotel-9.jpg"
     name: "Klana Beach Resort"
 
 agencies:
-  -
-    visual: "logo-kkm.png"
-  -
-    visual: "logo-sumber.png"
-  -
-    visual: "logo-nadma.png"
+  - visual: "logo-kkm.png"
+  - visual: "logo-sumber.png"
+  - visual: "logo-nadma.png"

@@ -1,507 +1,452 @@
 {% extends 'default.njk' %}
-
 {% block content -%}
-
 <div class="section">
-	<div class="wrapper">
-		<form id='booking-confirm' action='#' method='post'>
-			<div class="booking-confirm-header">
-				<div class="section__block">
-					<div class="section__block-header">
-						<div class="section__block-header-primary">
-							<div class="heading section__block-heading">
-								{{ data.mainHeading }} <span class="text-highlight">{{ data.mainHeadingHighlight }}</span> {{ data.mainHeading2 }}
-							</div>
-
-							<div class="section__block-desc">
-								{{ data.mainHeaderDesc }}
-							</div>
-						</div>
-
-						<div class="section__block-header-secondary">
-							<div class="section__block-header-image">
-								<img src="{{path.images.pages}}booking-confirm/{{ data.mainHeaderImage }}">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="booking-confirm-content">
-				<div class="booking-confirm__block">
-					<div class="section__block">
-						<div class="booking-form__secondary">
-							<div class="form-layout flex-form-- type-2--">
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Preferred hotel
-										</div>
-
-										<div class="field__result">
-											AnCasa Residences
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Check in
-										</div>
-
-										<div class="field__result">
-											30/5/2021
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Check out
-										</div>
-
-										<div class="field__result">
-											15/6/2021
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="section__block">
-						<div class="subheading section__block-subheading">
-							{{ data.subHeading1 }} <span class="text-highlight">{{ data.subHeadingHighlight1 }}</span>
-						</div>
-
-						<div class="booking-form__secondary">
-							<div class="form-layout type-2--">
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Purchase on behalf others?
-										</div>
-
-										<div class="field__result">
-											Yes
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Your name
-										</div>
-
-										<div class="field__result">
-											Saif Ali Khan
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Date of birth
-										</div>
-
-										<div class="field__result">
-											22/7/1987
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Passport / ID card number
-										</div>
-
-										<div class="field__result">
-											890222145238
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Email
-										</div>
-
-										<div class="field__result">
-											alikhan@gmail.com
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Mobile number
-										</div>
-
-										<div class="field__result">
-											0123456789
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Nationality
-										</div>
-
-										<div class="field__result">
-											Malaysian
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="section__block">
-						<div class="subheading section__block-subheading">
-							{{ data.subHeading2 }} <span class="text-highlight">{{ data.subHeadingHighlight2 }}</span>
-						</div>
-
-						<div class="booking-form__secondary">
-							<div class="form-layout type-2--">
-								<div class="form-layout__block full-width--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Address
-										</div>
-
-										<div class="field__result">
-											No.33, Taman Warisan Jaya, 53100 Sentul, Wilayah Persekutuan Kuala Lumpur, Malaysia
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="section__block">
-						<div class="subheading section__block-subheading">
-							{{ data.subHeading4 }} <span class="text-highlight">{{ data.subHeadingHighlight4 }}</span>
-						</div>
-
-						<div class="booking-form__secondary">
-							<div class="form-layout type-2--">
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Emergency contact name
-										</div>
-
-										<div class="field__result">
-											Maryam Munirah
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Emergency contact
-										</div>
-
-										<div class="field__result">
-											0123456789
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Relationship
-										</div>
-
-										<div class="field__result">
-											Spouse
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Gender
-										</div>
-
-										<div class="field__result">
-											Female
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="section__block">
-						<div class="subheading section__block-subheading">
-							{{ data.subHeading5 }} <span class="text-highlight">{{ data.subHeadingHighlight5 }}</span>
-						</div>
-
-						<div class="booking-form__secondary">
-							<div class="form-layout type-2--">
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											need a RT-PCR Test
-										</div>
-
-										<div class="field__result">
-											Yes
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Pickup service
-										</div>
-
-										<div class="field__result">
-											Yes
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block full-width--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Pickup address
-										</div>
-
-										<div class="field__result">
-											CAC Nilai, Negeri Sembilan
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="section__block">
-						<div class="subheading section__block-subheading">
-							{{ data.subHeading6 }} <span class="text-highlight">{{ data.subHeadingHighlight6 }}</span>
-						</div>
-
-						<div class="booking-form__secondary">
-							<div class="form-layout type-2--">
-								<div class="form-layout__block">
-									<div class="field with-label--">
-										<div class="field__label">
-											Do you have dependent guest
-										</div>
-
-										<div class="field__result">
-											Yes
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="booking-form__secondary dependent-guest-result">
-							<div class="form-layout type-2--">
-								<div class="form-layout__block full-width--">
-									<div class="field">
-										<div class="field__title">
-											Guest 1
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Your name
-										</div>
-
-										<div class="field__result">
-											Tajudin
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Date of birth
-										</div>
-
-										<div class="field__result">
-											22/3/2001
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Nationality
-										</div>
-
-										<div class="field__result">
-											Malaysian
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Passport / ID card number
-										</div>
-
-										<div class="field__result">
-											890222145234
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Mobile number
-										</div>
-
-										<div class="field__result">
-											0123456789
-										</div>
-									</div>
-								</div>
-
-								<div class="form-layout__block col-3--">
-									<div class="field with-label--">
-										<div class="field__label">
-											Relationship
-										</div>
-
-										<div class="field__result">
-											Son
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="booking-confirm__block">
-					<div class="section__block">
-						<div class="subheading section__block-subheading">
-							{{ data.subHeading8 }} <span class="text-highlight">{{ data.subHeadingHighlight8 }}</span>
-						</div>
-
-						<div class="form-layout" style="margin-bottom: 20px;">
-							<div class="form-layout__block">
-								<div class="field">
-									<div class="field__control">
-										<select class="field__select" id="payment" required>
-											<option value="Pay via DuitNow">Pay via DuitNow</option>
-											<option value="Pay via FPX">Pay via FPX</option>
-											<option value="Pay via Credit Card">Pay via Credit Card</option>
-										</select>
-									</div>
-
-									<div class="field__ui"></div>
-								</div>
-							</div>
-						</div>
-
-						<div class="booking-payment">
-							<div class="booking-payment__block">
-								<img src="{{path.images.pages}}booking-confirm/qr-code.jpg">
-							</div>
-
-							<div class="booking-payment__block">
-								<div class="booking-payment__title">
-									{{ data.paymentTitle }}
-								</div>
-
-								<ol class="booking-payment__steps">
-									<li>Launch rour preferred bank App, tap on QRPay</li>
-									<li>Scan the QR code</li>
-									<li>Key in the amount and complete your purchase</li>
-									<li>Attach your payment slip</li>
-									<li>Click <span class="text-highlight">submit details</span> to complete the process</li>
-								</ol>
-
-								<div class="booking-payment__title" style="margin-top: 35px;">
-									{{ data.attachPaymentTitle }}
-								</div>
-
-								<div class="form-layout flex-form-- type-2--" style="margin-top:1px;">
-									<div class="form-layout__block full-width--">
-										<div class="field">
-											<input type="file">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="section__block">
-						<div class="booking-form__secondary">
-							<div class="form-layout flex-form-- type-2--">
-								<div class="form-layout__block full-width--">
-									<div class="field checkbox--">
-										<input class="field__checkbox" id="onBehalf" type="checkbox" value="Agreed">
-										
-										<label for="onBehalf">I agreed with the <a href="{%- if language == 'my' -%}{{ path.language.my }}terms-and-conditions.html {% else %} {{ path.language.en }}terms-and-conditions.html {% endif %}"><span class="text-highlight">Terms & conditions</span> provided.</a></label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="section__block">
-						<div class="subheading section__block-subheading">
-							{{ data.subHeading7 }} <span class="text-highlight">{{ data.subHeadingHighlight7 }}</span>
-						</div>
-
-						<div class="total-amount">
-							<div class="total-amount__block">
-								<div class="total-amount__price">
-									RM00.00
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="section__block">
-						<div class="total-amount">
-							<div class="total-amount__block">
-								<div class="total-amount__ctas">
-									<div class="total-amount__ctas">
-	                                    <a class="button" href="{%- if language == 'my' -%}{{ path.language.my }}payment-success.html {% else %} {{ path.language.en }}payment-success.html {% endif %}">
-	                                        {%- if language == 'my' -%} Submit details {% else %} Submit details {%- endif -%}
-	                                    </a>
-
-	                                    <a class="button-text" href="{%- if language == 'my' -%}{{ path.language.my }}booking.html {% else %} {{ path.language.en }}booking.html {% endif %}">
-	                                        {%- if language == 'my' -%} Edit details {% else %} Edit details {%- endif -%}
-	                                    </a>
-		                            </div>
-		                        </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</form>
-	</div>
-</div>
-
-{%- endblock %}
+    <div class="wrapper">
+        <form id='booking-confirm' action='#' method='post'>
+            <div class="booking-confirm-header">
+                <div class="section__block">
+                    <div class="section__block-header">
+                        <div class="section__block-header-primary">
+                            <div class="heading section__block-heading">
+                                {{ data.mainHeading }}
+                                <span class="text-highlight">{{ data.mainHeadingHighlight }}</span>
+                                {{ data.mainHeading2 }}
+                            </div>
+                            <div class="section__block-desc">
+                                {{ data.mainHeaderDesc }}
+                            </div>
+                        </div>
+                        <div class="section__block-header-secondary">
+                            <div class="section__block-header-image">
+                                <img src="{{ path.images.pages }}booking-confirm/{{ data.mainHeaderImage }}"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-confirm-content">
+                    <div class="booking-confirm__block">
+                        <div class="section__block">
+                            <div class="booking-form__secondary">
+                                <div class="form-layout flex-form-- type-2--">
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Preferred hotel
+                                            </div>
+                                            <div class="field__result">
+                                                AnCasa Residences
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Check in
+                                            </div>
+                                            <div class="field__result">
+                                                30/5/2021
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Check out
+                                            </div>
+                                            <div class="field__result">
+                                                15/6/2021
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__block">
+                            <div class="subheading section__block-subheading">
+                                {{ data.subHeading1 }}
+                                <span class="text-highlight">{{ data.subHeadingHighlight1 }}</span>
+                            </div>
+                            <div class="booking-form__secondary">
+                                <div class="form-layout type-2--">
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Purchase on behalf others?
+                                            </div>
+                                            <div class="field__result">
+                                                Yes
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Your name
+                                            </div>
+                                            <div class="field__result">
+                                                Saif Ali Khan
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Date of birth
+                                            </div>
+                                            <div class="field__result">
+                                                22/7/1987
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Passport / ID card number
+                                            </div>
+                                            <div class="field__result">
+                                                890222145238
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Email
+                                            </div>
+                                            <div class="field__result">
+                                                alikhan@gmail.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Mobile number
+                                            </div>
+                                            <div class="field__result">
+                                                0123456789
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Nationality
+                                            </div>
+                                            <div class="field__result">
+                                                Malaysian
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__block">
+                            <div class="subheading section__block-subheading">
+                                {{ data.subHeading2 }}
+                                <span class="text-highlight">{{ data.subHeadingHighlight2 }}</span>
+                            </div>
+                            <div class="booking-form__secondary">
+                                <div class="form-layout type-2--">
+                                    <div class="form-layout__block full-width--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Address
+                                            </div>
+                                            <div class="field__result">
+                                                No.33, Taman Warisan Jaya, 53100 Sentul, Wilayah Persekutuan Kuala Lumpur, Malaysia
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__block">
+                            <div class="subheading section__block-subheading">
+                                {{ data.subHeading4 }}
+                                <span class="text-highlight">{{ data.subHeadingHighlight4 }}</span>
+                            </div>
+                            <div class="booking-form__secondary">
+                                <div class="form-layout type-2--">
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Emergency contact name
+                                            </div>
+                                            <div class="field__result">
+                                                Maryam Munirah
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Emergency contact
+                                            </div>
+                                            <div class="field__result">
+                                                0123456789
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Relationship
+                                            </div>
+                                            <div class="field__result">
+                                                Spouse
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Gender
+                                            </div>
+                                            <div class="field__result">
+                                                Female
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__block">
+                            <div class="subheading section__block-subheading">
+                                {{ data.subHeading5 }}
+                                <span class="text-highlight">{{ data.subHeadingHighlight5 }}</span>
+                            </div>
+                            <div class="booking-form__secondary">
+                                <div class="form-layout type-2--">
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                need a RT-PCR Test
+                                            </div>
+                                            <div class="field__result">
+                                                Yes
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Pickup service
+                                            </div>
+                                            <div class="field__result">
+                                                Yes
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block full-width--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Pickup address
+                                            </div>
+                                            <div class="field__result">
+                                                CAC Nilai, Negeri Sembilan
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__block">
+                            <div class="subheading section__block-subheading">
+                                {{ data.subHeading6 }}
+                                <span class="text-highlight">{{ data.subHeadingHighlight6 }}</span>
+                            </div>
+                            <div class="booking-form__secondary">
+                                <div class="form-layout type-2--">
+                                    <div class="form-layout__block">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Do you have dependent guest
+                                            </div>
+                                            <div class="field__result">
+                                                Yes
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="booking-form__secondary dependent-guest-result">
+                                <div class="form-layout type-2--">
+                                    <div class="form-layout__block full-width--">
+                                        <div class="field">
+                                            <div class="field__title">
+                                                Guest 1
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Your name
+                                            </div>
+                                            <div class="field__result">
+                                                Tajudin
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Date of birth
+                                            </div>
+                                            <div class="field__result">
+                                                22/3/2001
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Nationality
+                                            </div>
+                                            <div class="field__result">
+                                                Malaysian
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Passport / ID card number
+                                            </div>
+                                            <div class="field__result">
+                                                890222145234
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Mobile number
+                                            </div>
+                                            <div class="field__result">
+                                                0123456789
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-layout__block col-3--">
+                                        <div class="field with-label--">
+                                            <div class="field__label">
+                                                Relationship
+                                            </div>
+                                            <div class="field__result">
+                                                Son
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-confirm__block">
+                        <div class="section__block">
+                            <div class="subheading section__block-subheading">
+                                {{ data.subHeading8 }}
+                                <span class="text-highlight">{{ data.subHeadingHighlight8 }}</span>
+                            </div>
+                            <div class="form-layout" style="margin-bottom: 20px;">
+                                <div class="form-layout__block">
+                                    <div class="field">
+                                        <div class="field__control">
+                                            <select class="field__select" id="payment" required>
+                                                <option value="Pay via DuitNow">Pay via DuitNow</option>
+                                                <option value="Pay via FPX">Pay via FPX</option>
+                                                <option value="Pay via Credit Card">Pay via Credit Card</option>
+                                            </select>
+                                        </div>
+                                        <div class="field__ui"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="booking-payment">
+                                <div class="booking-payment__block">
+                                    <img src="{{ path.images.pages }}booking-confirm/qr-code.jpg"></div>
+                                    <div class="booking-payment__block">
+                                        <div class="booking-payment__title">
+                                            {{ data.paymentTitle }}
+                                        </div>
+                                        <ol class="booking-payment__steps">
+                                            <li>Launch rour preferred bank App, tap on QRPay</li>
+                                            <li>Scan the QR code</li>
+                                            <li>Key in the amount and complete your purchase</li>
+                                            <li>Attach your payment slip</li>
+                                            <li>Click
+                                                <span class="text-highlight">submit details</span>
+                                                to complete the process</li>
+                                        </ol>
+                                        <div class="booking-payment__title" style="margin-top: 35px;">
+                                            {{ data.attachPaymentTitle }}
+                                        </div>
+                                        <div class="form-layout flex-form-- type-2--" style="margin-top:1px;">
+                                            <div class="form-layout__block full-width--">
+                                                <div class="field">
+                                                    <input type="file"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section__block">
+                                    <div class="booking-form__secondary">
+                                        <div class="form-layout flex-form-- type-2--">
+                                            <div class="form-layout__block full-width--">
+                                                <div class="field checkbox--">
+                                                    <input class="field__checkbox" id="onBehalf" type="checkbox" value="Agreed">
+                                                        <label for="onBehalf">I agreed with the
+                                                            <a href="{%- if language == 'my' -%}{{ path.language.my }}terms-and-conditions.html {% else %} {{ path.language.en }}terms-and-conditions.html {% endif %}">
+                                                                <span class="text-highlight">Terms & conditions</span>
+                                                                provided.</a>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section__block">
+                                        <div class="subheading section__block-subheading">
+                                            {{ data.subHeading7 }}
+                                            <span class="text-highlight">{{ data.subHeadingHighlight7 }}</span>
+                                        </div>
+                                        <div class="total-amount">
+                                            <div class="total-amount__block">
+                                                <div class="total-amount__price">
+                                                    RM00.00
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section__block">
+                                        <div class="total-amount">
+                                            <div class="total-amount__block">
+                                                <div class="total-amount__ctas">
+                                                    <div class="total-amount__ctas">
+                                                        <a class="button" href="{%- if language == 'my' -%}{{ path.language.my }}payment-success.html {% else %} {{ path.language.en }}payment-success.html {% endif %}">
+                                                            {%- if language == 'my' -%}
+                                                                Submit details
+                                                            {% else %}
+                                                                Submit details
+                                                            {%- endif -%}
+                                                        </a>
+                                                        <a class="button-text" href="{%- if language == 'my' -%}{{ path.language.my }}booking.html {% else %} {{ path.language.en }}booking.html {% endif %}">
+                                                            {%- if language == 'my' -%}
+                                                                Edit details
+                                                            {% else %}
+                                                                Edit details
+                                                            {%- endif -%}
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            {%- endblock %}

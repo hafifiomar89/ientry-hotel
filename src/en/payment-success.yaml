@@ -1,14 +1,11 @@
 title: "Payment success"
 
 navigation:
-  - 
-    link: "about-us.html"
+  - link: "about-us.html"
     title: "About us"
-  - 
-    link: "select-room.html"
+  - link: "select-room.html"
     title: "Book now"
-  -
-    link: "helpdesk.html"
+  - link: "helpdesk.html"
     title: "Helpdesk"
 
 mainHeading: "Booking confirmed!"

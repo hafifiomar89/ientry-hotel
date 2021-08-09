@@ -1,14 +1,11 @@
 title: "Select Rooms"
 
 navigation:
-  - 
-    link: "about-us.html"
+  - link: "about-us.html"
     title: "About us"
-  - 
-    link: "select-room.html"
+  - link: "select-room.html"
     title: "Book now"
-  -
-    link: "helpdesk.html"
+  - link: "helpdesk.html"
     title: "Helpdesk"
 
 mainHeading: "Choose your"
@@ -17,8 +14,7 @@ mainHeaderDesc: "Featuring elegant interiors with Seaview or garden views, the r
 mainHeaderImage: "gfx-header.png"
 
 roomList:
-  -
-    id: "ancasa"
+  - id: "ancasa"
     thumbnail: "our-hotels/ancasa-residences/room1/thumbnail.jpg"
     roomRemaining: "6"
     roomHeading: "One Bedroom Deluxe Apartment"
@@ -27,34 +23,21 @@ roomList:
     roomCapacity: "2"
     price: "300.00"
     quantities:
-      -
-        "1"
-      -
-        "2"
-      -
-        "3"
-      -
-        "4"
-      -
-        "5"
-      -
-        "6"
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+      - "5"
+      - "6"
     dataModal: "modal1"
-    roomImage: 
-      -
-        "our-hotels/ancasa-residences/room1/one-bedroom-deluxe-apartment.jpg"
-      -
-        "our-hotels/ancasa-residences/room1/one-bedroom-deluxe-apartment (1).jpg"
-      -
-        "our-hotels/ancasa-residences/room1/one-bedroom-deluxe-apartment (2).jpg"
-      -
-        "our-hotels/ancasa-residences/room1/one-bedroom-deluxe-apartment (3).jpg"
-      -
-        "our-hotels/ancasa-residences/room1/one-bedroom-deluxe-apartment (4).jpg"
-      -
-        "our-hotels/ancasa-residences/room1/one-bedroom-deluxe-apartment (1).jpg"
-  -
-    id: "ancasa"
+    roomImage:
+      - "our-hotels/ancasa-residences/room1/one-bedroom-deluxe-apartment.jpg"
+      - "our-hotels/ancasa-residences/room1/one-bedroom-deluxe-apartment (1).jpg"
+      - "our-hotels/ancasa-residences/room1/one-bedroom-deluxe-apartment (2).jpg"
+      - "our-hotels/ancasa-residences/room1/one-bedroom-deluxe-apartment (3).jpg"
+      - "our-hotels/ancasa-residences/room1/one-bedroom-deluxe-apartment (4).jpg"
+      - "our-hotels/ancasa-residences/room1/one-bedroom-deluxe-apartment (1).jpg"
+  - id: "ancasa"
     thumbnail: "our-hotels/ancasa-residences/room2/thumbnail.jpg"
     roomRemaining: "6"
     roomHeading: "Two-Bedroom (Shared Rooms) Deluxe Apartment"
@@ -63,30 +46,19 @@ roomList:
     roomCapacity: "4"
     price: "510.00"
     quantities:
-      -
-        "1"
-      -
-        "2"
-      -
-        "3"
-      -
-        "4"
-      -
-        "5"
-      -
-        "6"
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+      - "5"
+      - "6"
     dataModal: "modal2"
-    roomImage: 
-      -
-        "our-hotels/ancasa-residences/room2/two-bedroom-deluxe-apartment.jpg"
-      -
-        "our-hotels/ancasa-residences/room2/two-bedroom-deluxe-apartment (1).jpg"
-      -
-        "our-hotels/ancasa-residences/room2/two-bedroom-deluxe-apartment (2).jpg"
-      -
-        "our-hotels/ancasa-residences/room2/two-bedroom-deluxe-apartment (3).jpg"
-  -
-    id: "ancasa"
+    roomImage:
+      - "our-hotels/ancasa-residences/room2/two-bedroom-deluxe-apartment.jpg"
+      - "our-hotels/ancasa-residences/room2/two-bedroom-deluxe-apartment (1).jpg"
+      - "our-hotels/ancasa-residences/room2/two-bedroom-deluxe-apartment (2).jpg"
+      - "our-hotels/ancasa-residences/room2/two-bedroom-deluxe-apartment (3).jpg"
+  - id: "ancasa"
     thumbnail: "our-hotels/ancasa-residences/room3/thumbnail.jpg"
     roomRemaining: "6"
     roomHeading: "Three-Bedroom (Shared Rooms) Deluxe Apartment"
@@ -95,34 +67,21 @@ roomList:
     roomCapacity: "6"
     price: "730.00"
     quantities:
-      -
-        "1"
-      -
-        "2"
-      -
-        "3"
-      -
-        "4"
-      -
-        "5"
-      -
-        "6"
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+      - "5"
+      - "6"
     dataModal: "modal3"
-    roomImage: 
-      -
-        "our-hotels/ancasa-residences/room3/three-bedroom-deluxe-apartment.jpg"
-      -
-        "our-hotels/ancasa-residences/room3/three-bedroom-deluxe-apartment (1).jpg"
-      -
-        "our-hotels/ancasa-residences/room3/three-bedroom-deluxe-apartment (2).jpg"
-      -
-        "our-hotels/ancasa-residences/room3/three-bedroom-deluxe-apartment (3).jpg"
-      -
-        "our-hotels/ancasa-residences/room3/three-bedroom-deluxe-apartment (4).jpg"
-      -
-        "our-hotels/ancasa-residences/room3/three-bedroom-deluxe-apartment (5).jpg"
-  -
-    id: "ancasa"
+    roomImage:
+      - "our-hotels/ancasa-residences/room3/three-bedroom-deluxe-apartment.jpg"
+      - "our-hotels/ancasa-residences/room3/three-bedroom-deluxe-apartment (1).jpg"
+      - "our-hotels/ancasa-residences/room3/three-bedroom-deluxe-apartment (2).jpg"
+      - "our-hotels/ancasa-residences/room3/three-bedroom-deluxe-apartment (3).jpg"
+      - "our-hotels/ancasa-residences/room3/three-bedroom-deluxe-apartment (4).jpg"
+      - "our-hotels/ancasa-residences/room3/three-bedroom-deluxe-apartment (5).jpg"
+  - id: "ancasa"
     thumbnail: "our-hotels/ancasa-residences/room4/thumbnail.jpg"
     roomRemaining: "4"
     roomHeading: "Single Occupany Room"
@@ -131,23 +90,14 @@ roomList:
     roomCapacity: "1"
     price: "240.00"
     quantities:
-      -
-        "1"
-      -
-        "2"
-      -
-        "3"
-      -
-        "4"
-      -
-        "5"
-      -
-        "6"
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+      - "5"
+      - "6"
     dataModal: "modal4"
-    roomImage: 
-      -
-        "our-hotels/ancasa-residences/room4/single-occupany-room.jpg"
-      -
-        "our-hotels/ancasa-residences/room4/single-occupany-room (1).jpg"
-      -
-        "our-hotels/ancasa-residences/room4/single-occupany-room (2).jpg"
+    roomImage:
+      - "our-hotels/ancasa-residences/room4/single-occupany-room.jpg"
+      - "our-hotels/ancasa-residences/room4/single-occupany-room (1).jpg"
+      - "our-hotels/ancasa-residences/room4/single-occupany-room (2).jpg"

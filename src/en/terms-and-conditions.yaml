@@ -1,14 +1,11 @@
 title: "Booking Confirmation"
 
 navigation:
-  - 
-    link: "about-us.html"
+  - link: "about-us.html"
     title: "About us"
-  - 
-    link: "select-room.html"
+  - link: "select-room.html"
     title: "Book now"
-  -
-    link: "helpdesk.html"
+  - link: "helpdesk.html"
     title: "Helpdesk"
 
 mainHeading: "Terms and"
@@ -23,16 +20,11 @@ terms1: "Registed Employer / Employee or Individual MUST DOWNLOAD I Entry My Per
 subHeading2: "Hotel Terms &"
 subHeadingHighlight2: "conditions"
 terms2:
-  -
-    list: "Any damages or loss to hotel property, whether accidental or willful, is the responsibility of the registered employer / employee or individual for each particular room. Any costs associated with repairs and/or replacement of stolen/loss/damages will be charged to the registered employer or employee or individual."
-  -
-    list: "All payment is to be made in FULL PAYMENT before Check in, and any extension days, must be done through online booking at www.ientryhotel.com with FULL PAYMENT."
-  -
-    list: "All payment made is non-refundable and subject to I Entry Hotel’s Managemet Approval."
-  -
-    list: "The employer / employee or individual must abide by all rules and regulations as stipulated in the Hotel’s Rules and Regulations."
-  -
-    list: "The employer / employee or individual must abide all the Standard Operationg Procedures (SOP) as stipulated in ACT 342 and as provided by Government from time to time."
+  - list: "Any damages or loss to hotel property, whether accidental or willful, is the responsibility of the registered employer / employee or individual for each particular room. Any costs associated with repairs and/or replacement of stolen/loss/damages will be charged to the registered employer or employee or individual."
+  - list: "All payment is to be made in FULL PAYMENT before Check in, and any extension days, must be done through online booking at www.ientryhotel.com with FULL PAYMENT."
+  - list: "All payment made is non-refundable and subject to I Entry Hotel’s Managemet Approval."
+  - list: "The employer / employee or individual must abide by all rules and regulations as stipulated in the Hotel’s Rules and Regulations."
+  - list: "The employer / employee or individual must abide all the Standard Operationg Procedures (SOP) as stipulated in ACT 342 and as provided by Government from time to time."
 
 subHeading3: "Pickup"
 subHeadingHighlight3: "Details"

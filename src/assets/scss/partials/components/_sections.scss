@@ -3,63 +3,63 @@
 -----------------------------------------------------------------------------*/
 
 .section {
-    padding: 25px 0;
-    padding-bottom: 48px;
+  padding: 25px 0;
+  padding-bottom: 48px;
 
-    &.no-space-- {
-        padding: 0;
-    }
+  &.no-space-- {
+    padding: 0;
+  }
 
-    &.no-space-top-- {
-        padding-top: 0;
-    }
+  &.no-space-top-- {
+    padding-top: 0;
+  }
 
-    &.no-space-bottom-- {
-        padding-bottom: 0;
-    }
+  &.no-space-bottom-- {
+    padding-bottom: 0;
+  }
 }
-    .section__block {
-        + .section__block {
-            margin-top: 45px;
-        }
-    }
-        .section__block-header {
-            display: flex;
-            align-items: center;
-            margin-left: -15px;
-            justify-content: space-between;
-        }
-            .section__block-header-primary,
-            .section__block-header-secondary {
-                padding-left: 15px;
-            }
-            .section__block-header-primary {
-                width: 50%;
-            }
-            // .section__block-header-secondary {
-            //     flex: 1;
-            // }
-                .section__block-heading {
-                    margin-bottom: 30px;
-                }
-                .section__block-subheading {
-                    margin-bottom: 15px;
-                }
-                .section__block-desc {
-                    font-weight: $fw-medium;
-                }
-        .section__block-header-ctas {
-            margin-bottom: 40px;
-        }
+.section__block {
+  + .section__block {
+    margin-top: 45px;
+  }
+}
+.section__block-header {
+  display: flex;
+  align-items: center;
+  margin-left: -15px;
+  justify-content: space-between;
+}
+.section__block-header-primary,
+.section__block-header-secondary {
+  padding-left: 15px;
+}
+.section__block-header-primary {
+  width: 50%;
+}
+// .section__block-header-secondary {
+//     flex: 1;
+// }
+.section__block-heading {
+  margin-bottom: 30px;
+}
+.section__block-subheading {
+  margin-bottom: 15px;
+}
+.section__block-desc {
+  font-weight: $fw-medium;
+}
+.section__block-header-ctas {
+  margin-bottom: 40px;
+}
 
 @media ($bp-md-dn) {
-    .section__block-header {
-        flex-direction: column;
-    }
-        .section__block-header-primary {
-            width: 100%;
-        }
-        .section__block-header-secondary {
-            margin-top: 30px;
-        }
+  .section__block-header {
+    flex-direction: column;
+  }
+  .section__block-header-primary {
+    width: 100%;
+  }
+  .section__block-header-secondary {
+    margin-top: 30px;
+  }
 }

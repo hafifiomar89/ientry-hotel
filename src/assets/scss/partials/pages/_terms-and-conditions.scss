@@ -2,13 +2,12 @@
     $ terms-and-conditions
 -----------------------------------------------------------------------------*/
 
-.terms-content {}
 .terms-content-list {
-	padding-left: 15px;
+  padding-left: 15px;
 
-	li {
-		+ li {
-			margin-top: 10px;
-		}
-	}
+  li {
+    + li {
+      margin-top: 10px;
+    }
+  }
 }
