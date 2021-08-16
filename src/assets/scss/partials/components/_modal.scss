@@ -36,6 +36,15 @@
     margin-left: 15px;
     margin-right: 15px;
     padding: 20px;
+
+    &.custom-card-- {
+      overflow: hidden;
+
+      .modal__body {
+        max-height: 80vh;
+        overflow: auto;
+      }
+    }
   }
 
   .modal__close {

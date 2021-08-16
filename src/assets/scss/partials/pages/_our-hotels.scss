@@ -11,6 +11,15 @@
   width: 65%;
   padding-left: 30px;
 
+  &.for-booking-- {
+    width: 100%;
+    padding-left: 0;
+
+    .room-list__wrapper {
+      background-color: $white;
+    }
+  }
+
   .header-carousel__form-container {
     box-shadow: none;
     border: 1px solid #ccc;
