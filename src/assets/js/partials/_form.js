@@ -246,7 +246,12 @@ $("#dependent").click(function () {
 });
 
 $(function () {
-  $("#dob").datepicker({ dateFormat: "d MM, yy" });
+  $("#dob").datepicker({ 
+    dateFormat: "dd/mm/yy",
+    changeMonth: true,
+    changeYear: true,
+    yearRange: '-100:+0' 
+  });
 });
 
 $(document).on("click", ".input-number-increment", function () {
