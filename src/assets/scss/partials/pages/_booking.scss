@@ -77,3 +77,35 @@
     display: none;
   }
 }
+
+.dependent__form-ctas {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.dependent__result {
+  padding: 10px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  margin-top: 40px;
+  position: relative;
+
+  .field__label {
+    font-size: 14px;
+    color: #8095ae;
+  }
+
+  .dependent__remove {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    z-index: 1;
+    line-height: 1;
+    color: $red;
+
+    &:hover {
+      color: $grey;
+    }
+  }
+}

@@ -235,6 +235,16 @@ $("#pickupAddress").click(function () {
   }
 });
 
+$("#extraBedForm").hide();
+
+$("#extraBed").click(function () {
+  if ($(this).is(":checked")) {
+    $("#extraBedForm").show();
+  } else {
+    $("#extraBedForm").hide();
+  }
+});
+
 $("#dependentGuest").hide();
 
 $("#dependent").click(function () {

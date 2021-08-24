@@ -684,18 +684,108 @@
 											</div>
 										</div>
 									</div>
-								</div>
 
-								<div class="section__block" id="pickupForm">
-									<div class="booking-form__secondary">
+									<div class="booking-form__secondary" id="pickupForm" style="margin-top: 25px; margin-bottom: 50px;">
 										<div class="form-layout">
-											<div class="form-layout__block">
+											<div class="form-layout__block col-2--">
 												<div class="field">
 													<div class="field__control">
 														<select class="field__select" required>
-															<option value="" selected disabled hidden>Select pickup location</option>
-															<option value="From CAC Stadium Malawati to Port Dickson">From CAC Stadium Malawati to Port Dickson</option>
-															<option value="From CAC Nilai to Port Dickson">From CAC Nilai to Port Dickson</option>
+															<option value="" selected disabled hidden>Select pickup area</option>
+															<option value="Port Dickson area">Port Dickson area</option>
+															<option value="Outside Port Dickson area">Outside Port Dickson area</option>
+														</select>
+													</div>
+
+													<div class="field__ui"></div>
+												</div>
+											</div>
+
+											<div class="form-layout__block col-2--">
+												<div class="field">
+													<div class="field__control">
+														<select class="field__select" required>
+															<option value="One way transfer">One way transfer</option>
+															<option value="Two way transfer">Two way transfer</option>
+														</select>
+													</div>
+
+													<div class="field__ui"></div>
+												</div>
+											</div>
+
+											<div class="form-layout__block col-2--">
+												<div class="field">
+													<div class="field__control">
+														<select class="field__select" required>
+															<option value="" selected disabled hidden>Select transport mode</option>
+															<option value="Van (3-6pax)">Van (3-6pax)</option>
+															<option value="Bus (Max capacity: 20pax)">Bus (Max capacity: 20pax)</option>
+														</select>
+													</div>
+
+													<div class="field__ui"></div>
+												</div>
+											</div>
+
+											<div class="form-layout__block col-2--">
+												<div class="field">
+													<div class="field__control">
+														<select class="field__select" required>
+															<option value="" selected disabled hidden>Select total pax</option>
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+															<option value="8">8</option>
+															<option value="9">9</option>
+															<option value="10">10</option>
+															<option value="11">11</option>
+															<option value="12">12</option>
+															<option value="13">13</option>
+															<option value="14">14</option>
+															<option value="15">15</option>
+															<option value="16">16</option>
+															<option value="17">17</option>
+															<option value="18">18</option>
+															<option value="19">19</option>
+															<option value="20">20</option>
+														</select>
+													</div>
+
+													<div class="field__ui"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="booking-form__secondary" style="margin-top: 15px;">
+										<div class="form-layout">
+											<div class="form-layout__block">
+												<div class="field checkbox--">
+													<input class="field__checkbox" id="extraBed" type="checkbox" value="Extra bed">
+													
+													<label for="extraBed">Extra bed</label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="booking-form__secondary" id="extraBedForm" style="margin-top: 25px;">
+										<div class="form-layout">
+											<div class="form-layout__block col-2--">
+												<div class="field">
+													<div class="field__control">
+														<select class="field__select" required>
+															<option value="" selected disabled hidden>Select amount of extra bed</option>
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
 														</select>
 													</div>
 
@@ -723,16 +813,10 @@
 										</div>
 									</div>
 
-									<div class="booking-form__secondary" id="dependentGuest">
-										<div class="accordion" id="accordion">
-											<div class="accordion__block" id="accordionBlock">
-												<a class="accordion__toggle" href="javascript:void(0);">
-													Guest 1
-
-													<span class="accordion__toggle-icon"></span>
-												</a>
-
-												<div class="accordion__content">
+									<div class="booking-form__secondary" id="dependentGuest" style="margin-top: 25px;">
+										<div class="dependent">
+											<div class="dependent__form">
+												<div class="dependent__form-block">
 													<div class="form-layout">
 														<div class="form-layout__block col-2--">
 															<div class="field">
@@ -788,17 +872,169 @@
 														</div>
 													</div>
 												</div>
-											</div>
-										</div>
 
-										<div class="accordion-ctas">
-											<div class="accordion-ctas__wrapper">
-												<div class="accordion-ctas__block">
-													<button class="button-text add-guest" id="addGuest">Add guest</button>
+												<div class="dependent__form-ctas">
+													<div class="dependent__form-ctas-wrapper">
+														<div class="dependent__form-ctas-block">
+															<button class="button-text add-guest" id="addGuest">Add guest</button>
+														</div>
+													</div>
 												</div>
+											</div>
 
-												<div class="accordion-ctas__block">
-													<a href="" class="button-text">Remove guest</a>
+											<div class="dependent__result">
+												<a class="dependent__remove" href="#">
+													<i class="fas fa-times"></i>
+												</a>
+												
+												<div class="booking-form__secondary">
+													<div class="form-layout type-2--">
+														<div class="form-layout__block full-width--">
+															<div class="field">
+																<div class="field__title">
+																	Guest 1
+																</div>
+															</div>
+														</div>
+														<div class="form-layout__block col-3--">
+															<div class="field with-label--">
+																<div class="field__label">
+																	Your name
+																</div>
+																<div class="field__result">
+																	Tajudin
+																</div>
+															</div>
+														</div>
+														<div class="form-layout__block col-3--">
+															<div class="field with-label--">
+																<div class="field__label">
+																	Date of birth
+																</div>
+																<div class="field__result">
+																	22/3/2001
+																</div>
+															</div>
+														</div>
+														<div class="form-layout__block col-3--">
+															<div class="field with-label--">
+																<div class="field__label">
+																	Nationality
+																</div>
+																<div class="field__result">
+																	Malaysian
+																</div>
+															</div>
+														</div>
+														<div class="form-layout__block col-3--">
+															<div class="field with-label--">
+																<div class="field__label">
+																	Passport / ID card number
+																</div>
+																<div class="field__result">
+																	890222145234
+																</div>
+															</div>
+														</div>
+														<div class="form-layout__block col-3--">
+															<div class="field with-label--">
+																<div class="field__label">
+																	Mobile number
+																</div>
+																<div class="field__result">
+																	0123456789
+																</div>
+															</div>
+														</div>
+														<div class="form-layout__block col-3--">
+															<div class="field with-label--">
+																<div class="field__label">
+																	Relationship
+																</div>
+																<div class="field__result">
+																	Son
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="dependent__result">
+												<a class="dependent__remove" href="#">
+													<i class="fas fa-times"></i>
+												</a>
+
+												<div class="booking-form__secondary">
+													<div class="form-layout type-2--">
+														<div class="form-layout__block full-width--">
+															<div class="field">
+																<div class="field__title">
+																	Guest 2
+																</div>
+															</div>
+														</div>
+														<div class="form-layout__block col-3--">
+															<div class="field with-label--">
+																<div class="field__label">
+																	Your name
+																</div>
+																<div class="field__result">
+																	Tajudin
+																</div>
+															</div>
+														</div>
+														<div class="form-layout__block col-3--">
+															<div class="field with-label--">
+																<div class="field__label">
+																	Date of birth
+																</div>
+																<div class="field__result">
+																	22/3/2001
+																</div>
+															</div>
+														</div>
+														<div class="form-layout__block col-3--">
+															<div class="field with-label--">
+																<div class="field__label">
+																	Nationality
+																</div>
+																<div class="field__result">
+																	Malaysian
+																</div>
+															</div>
+														</div>
+														<div class="form-layout__block col-3--">
+															<div class="field with-label--">
+																<div class="field__label">
+																	Passport / ID card number
+																</div>
+																<div class="field__result">
+																	890222145234
+																</div>
+															</div>
+														</div>
+														<div class="form-layout__block col-3--">
+															<div class="field with-label--">
+																<div class="field__label">
+																	Mobile number
+																</div>
+																<div class="field__result">
+																	0123456789
+																</div>
+															</div>
+														</div>
+														<div class="form-layout__block col-3--">
+															<div class="field with-label--">
+																<div class="field__label">
+																	Relationship
+																</div>
+																<div class="field__result">
+																	Son
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>

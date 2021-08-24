@@ -1,0 +1,48 @@
+title: "Payment Notification"
+
+navigation:
+  - link: "about-us.html"
+    title: "About us"
+  - link: "select-room.html"
+    title: "Book now"
+  - link: "helpdesk.html"
+    title: "Helpdesk"
+
+mainHeading: "Booking confirmed!"
+mainHeadingHighlight: "email."
+mainHeading2: "Please check your"
+mainHeaderImage: "gfx-header.png"
+
+mainHeadingFail: "Booking fail!"
+mainHeadingHighlightFail: "email."
+mainHeading2Fail: "Please check your"
+mainHeaderImageFail: "gfx-header.png"
+
+subHeading1: "Personal"
+subHeadingHighlight1: "Details"
+
+subHeading2: "Address"
+subHeadingHighlight2: "Details"
+
+subHeading3: "Pickup"
+subHeadingHighlight3: "Details"
+
+subHeading4: "Emergency"
+subHeadingHighlight4: "Details"
+
+subHeading5: "Additional"
+subHeadingHighlight5: "Service"
+
+subHeading6: "Dependent"
+subHeadingHighlight6: "Guest"
+
+subHeading7: "Amount to"
+subHeadingHighlight7: "pay"
+
+subHeading8: "Please scan the"
+subHeadingHighlight8: "QR Code"
+
+subHeading9: "Attach"
+subHeadingHighlight9: "Payment slip"
+
+paymentTitle: "Steps for payment"
