@@ -1,0 +1,16 @@
+/*-----------------------------------------------------------------------------
+    $ Gfx Icon
+-----------------------------------------------------------------------------*/
+
+.gfx-icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+
+  &.fpx-- {
+    background-image: url("../images/shared/icons/icon-fpx.svg");
+    width: 60px;
+    height: 20px;
+  }
+}

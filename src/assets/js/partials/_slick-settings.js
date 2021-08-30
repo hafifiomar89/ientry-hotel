@@ -44,7 +44,7 @@ $(".agency-carousel").slick({
   dots: true,
   arrows: false,
   infinite: true,
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 4000,
@@ -77,4 +77,31 @@ $(".room-carousel").slick({
   adaptiveHeight: true,
   autoplay: false,
   autoplaySpeed: 4000,
+});
+
+$(".customer-carousel").slick({
+  dots: true,
+  arrows: false,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  adaptiveHeight: true,
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });

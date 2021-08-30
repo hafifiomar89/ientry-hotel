@@ -100,13 +100,13 @@
                     </div>
 
                     <div class="section__block-desc">
-                        I Entry Malaysia Sdn Bhd was founded and managed by individuals experienced in foreign manpower consultancy, Information and Communication Technology (ICT), system integration and IT consultancy, software development, and corporate management.
+                        It is our business to deliver quality accommodation for private quarantine in Malaysia. Through our holistic approach, we aim to provide them with a safe and comfortable stay, thoughtful amenities and services.
                     </div>
 
                     <div class="section-highlight__block-highlight">
                         <div class="section-highlight__block-highlight-col">
                             <span class="section-highlight__block-highlight-number">
-                                18
+                                3
                             </span>
 
                             <span class="section-highlight__block-highlight-text">
@@ -207,6 +207,44 @@
                     <div class="agency-carousel__wrapper">
                         <div class="agency-carousel__visual ta-c"> 
                             <img src="{{path.images.logos}}{{agency.visual}}">
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section highlight-agencies">
+    <div class="wrapper">
+        <div class="section__block">
+            <div class="section__block-heading ta-c partial-underline-middle">
+                Our satisfied <span class="text-highlight">customers</span>
+            </div>
+        </div>
+
+        <div class="section__block">
+            <div class="customer-carousel">
+            {% for customer in data.customers %}
+                <div class="customer-carousel__block">
+                    <div class="customer-carousel__wrapper">
+                        <div class="customer-carousel__title">
+                            {{customer.title}}
+                        </div>
+
+                        <div class="customer-carousel__description">
+                            {{customer.desc}}
+                        </div>
+
+                        <div class="customer-carousel__details">
+                            <div class="customer-carousel__details-visual ta-c"> 
+                                <img src="{{path.images.pages}}index/customer/{{customer.visual}}">
+                            </div>
+
+                            <div class="customer-carousel__details-name">
+                                {{customer.name}}
+                            </div>
                         </div>
                     </div>
                 </div>

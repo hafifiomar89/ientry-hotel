@@ -11,7 +11,7 @@
 }
 .site-footer__block {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
 }
 .site-footer__socmed-title {
@@ -49,10 +49,24 @@
     max-width: none;
     font-size: 12px;
     text-align: none;
+    flex: 1;
+  }
+  .site-footer__socmed {
+    &.space-left-sm-- {
+      margin-left: 25px;
+    }
   }
 }
 
-@media ($bp-xs-dn) {
+@media ($bp-md) {
+  .site-footer__socmed {
+    &.space-left-sm-- {
+      margin-left: 35px;
+    }
+  }
+}
+
+@media ($bp-sm-dn) {
   .site-footer__block {
     flex-direction: column;
   }

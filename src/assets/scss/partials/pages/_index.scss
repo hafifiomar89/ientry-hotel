@@ -302,6 +302,10 @@
   }
 }
 
+.hotel-carousel {
+  margin-bottom: 0;
+}
+
 .highlight-agencies {
   .section__block-heading {
     font-size: 42px;
@@ -313,6 +317,16 @@
     color: $blue-3;
     line-height: 1.5;
   }
+}
+.agency-carousel {
+  .slick-track{
+    display: flex !important;
+    align-items: center;
+  }
+  // .slick-slide {
+  //   height: inherit !important;
+  //   width: inherit !important;
+  // }
 }
 .agency-carousel__block {
   margin: 0 30px;
@@ -341,4 +355,56 @@
       line-height: 1.3;
     }
   }
+}
+
+.customer-carousel {
+  .slick-track{
+    display: flex !important;
+  }
+  .slick-slide {
+    height: inherit !important;
+  }
+}
+
+.customer-carousel__block {
+  display: flex;
+  height: 100%;
+}
+.customer-carousel__wrapper {
+  border-radius: 10px;
+  background: #E2FBFF;
+  padding: 15px;
+  margin: 0 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.customer-carousel__description {
+  flex: 1;
+}
+.customer-carousel__details {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.customer-carousel__details-visual {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+  img { 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0; 
+    object-fit: cover; 
+  }
+}
+.customer-carousel__details-name {
+  margin-left: 10px;
+  font-style: italic;
+  color: $grey;
 }
