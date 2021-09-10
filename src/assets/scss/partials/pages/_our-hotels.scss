@@ -222,8 +222,17 @@
 
   .button {
     width: 100%;
-    font-size: 16px;
+    font-size: 24px;
     flex: 1;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    background: $blue-2;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &:hover {
+      background: $orange;
+    }
   }
 
   .button-text {
@@ -265,6 +274,13 @@
   .room-list__wrapper,
   .room-reservation__wrapper {
     padding: 20px;
+  }
+
+  .room-reservation__ctas {
+    .button {
+      font-size: 18px;
+      border-radius: 30px;
+    }
   }
 }
 

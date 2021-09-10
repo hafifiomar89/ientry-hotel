@@ -1,0 +1,66 @@
+/*-----------------------------------------------------------------------------
+    $ FAQ
+-----------------------------------------------------------------------------*/
+
+.faq-list {
+    ol,ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ol {
+        counter-reset: main-counter;
+        
+        > li {
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+            .section__block-subheading {
+                counter-increment: main-counter;
+
+                &:before {
+                    content: counter(main-counter)". ";
+                }
+            }
+
+            > ul {
+                margin-left: 40px;
+                margin-top: 5px;
+                list-style-type: square;
+
+                > li {
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+
+                    &:nth-child(1) {
+                        margin-top: 0;
+                    }
+
+                    > ol {
+                        list-style-type: lower-alpha;
+                        margin-left: 15px;
+                        margin-top: 10px;
+
+                        > li {
+                            > ul {
+                                margin-left: 15px;
+                                list-style-type: circle;
+
+                                > li {
+                                    > ul {
+                                        margin-left: 15px;
+                                        list-style-type: lower-roman;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

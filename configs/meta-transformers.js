@@ -45,6 +45,7 @@ module.exports = [
                     icons: root + 'assets/images/shared/icons/',
                     logos: root + 'assets/images/shared/logos/',
                     pages: root + 'assets/images/pages/',
+                    background: root + 'assets/images/shared/background/',
 
                     /*
                      * Set the page's image folder based on its folder path and

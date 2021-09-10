@@ -26,6 +26,25 @@
   &.col-4-- {
     width: 25%;
   }
+
+  &.inline-flex-- {
+    display: flex;
+
+    .field {
+      width: 50%;
+
+      &:nth-child(1) {
+        padding-right: 15px;
+      }
+      &:nth-child(2) {
+        padding-left: 15px;
+        border-left: 1px solid #b3b1a8;
+      }
+    }
+    .field__control {
+      width: 100%;
+    }
+  }
 }
 
 @media ($bp-md-dn) {

@@ -1,0 +1,166 @@
+{% extends 'default.njk' %}
+
+{% block content -%}
+
+<div class="section">
+	<div class="wrapper">
+		<div class="section__block">
+			<div class="section__block-header">
+				<div class="section__block-header-primary">
+					<div class="heading section__block-heading">
+						{{ data.mainHeading }} <span class="text-highlight">{{ data.mainHeadingHighlight }}</span>
+					</div>
+				</div>
+
+				<div class="section__block-header-secondary">
+					<div class="section__block-header-image">
+						<img src="{{path.images.pages}}faq/{{ data.mainHeaderImage }}">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section__block faq-list">
+            <ol>
+                <li><span class="subheading section__block-subheading">What is the price of 1 (one) night for one person?</span><br>
+                    <ul>
+                        <li><b>Klana Beach Resort, Port Dickson</b><br>
+                            Single: RM200.00/night<br>
+                            Twin / Double: RM240.00/night
+                        </li>
+
+                        <li><b>Ancasa Residences, Port Dickson</b><br>
+                            1 BR Apartment for Single / Twin / Double : RM240.00/night<br>
+                            2 BR Apartment for 4 persons : RM510.00/night<br>
+                            3 BR Apartment for 6 persons : RM730.00/night
+                        </li>
+
+                        <li><b>Fuller Hotel, Alor Setar</b><br>
+                            Single : RM170 per room night<br>
+                            Twin / Double : RM240.00/night
+                        </li>
+                    </ul>
+                </li>
+
+                <li><span class="subheading section__block-subheading">I have tested positive for Covid-19. Can I stay in a hotel?</span><br>
+                    <ul>
+                        <li>Yes. But we only accept quarantine accommodation for Category 1 and 2 patients only.</li>
+                    </ul>
+                </li>
+
+                <li><span class="subheading section__block-subheading">My family and I have tested positive for Covid-19. Can quarantine us in the same room?</span><br>
+                    <ul>
+                        <li>Yes. Maximum capacity is 6 people depending on room type and hotel.</li>
+                    </ul>
+                </li>
+
+                <li><span class="subheading section__block-subheading">What facilities are provided?</span><br>
+                    <ul>
+                        <li>Transportation is available with additional charge.</li>
+                        <li>Meals provided 3 times a day delivered to the room.</li>
+                        <li>Daily visit by In-house doctor.</li>
+                        <li>myPersonal App for self assessment throughout their stay at the hotel.</li>
+                        <li>RTK-Antigen and RTK-PCR swab test services available with additional charge.</li>
+                    </ul>
+                </li>
+
+                <li><span class="subheading section__block-subheading">I am at home. Can you come pick me up and send me to the hotel?</span><br>
+                    <ul>
+                        <li>Yes. Transportation charges will apply depending on the distance traveled from the house/CAC to the hotel.</li>
+                    </ul>
+                </li>
+
+                <li><span class="subheading section__block-subheading">How much is the charge for transportation from home/CAC to hotel?</span><br>
+                    <ul>
+                        <li>RM150.00 if the patient within the same district of the chosen hotel</li>
+                        <li>RM200.00 and above if the patient is from a different district of the hotel</li>
+                    </ul>
+                </li>
+
+                <li><span class="subheading section__block-subheading">Can I know the location of the hotel?</span><br>
+                    <ul>
+                        <li>Port Dickson, Negeri Sembilan</li>
+                        <li>Alor Setar, Kedah</li>
+                    </ul>
+                </li>
+
+                <li><span class="subheading section__block-subheading">Admission & Discharge Criteria?</span><br>
+                    <ul>
+                        <li><b>Admission Criteria</b><br>
+                            The criteria for admission to this facility is in accordance with the latest COVID-19 Management Guidelines in Malaysia, namely
+                            
+                            <ol>
+                                <li><b>Adult</b><br>
+                                    COVID-19 category 1 and 2 patients who meet the following criteria:
+
+                                    <ul>
+                                        <li>Age not exceeding 60 years</li>
+                                        <li>No co-morbid such as DM, cardiovascular disease, chronic pulmonary disease including asthma, chronic renal disease, hypertension, obesity (BMI≥ 30 kg/m2)</li>
+                                        <li>Can move without assistance and can take their own medications</li>
+                                        <li>There are no current medical requirements such as hemodialysis</li>
+                                        <li>Does not pregnant</li>
+                                        <li>Does not meet the criteria for home quarantine</li>
+                                    </ul>
+                                </li>
+
+                                <li><b>Pediatric patients can only be accepted if the privacy and safety aspects can be addressed effectively and are not an issue</b><br>
+                                    <span class="text-highlight" style="margin-top: 5px;">If open space</span>
+
+                                    <ul>
+                                        <li>COVID-19 category 1 and 2 patients who meet the following criteria:
+                                            <ul>
+                                                <li>Age 7 and above*</li>
+                                                <li>Have a suitable guardian (if necessary)</li>
+                                                <li>No co-morbid</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <span class="text-highlight">If the room is separate</span>
+
+                                    <ul>
+                                        <li>COVID-19 category 1 and 2 patients who meet the following criteria:
+                                            <ul>
+                                                <li>Age 2 and above*</li>
+                                                <li>Have a suitable guardian (if necessary)</li>
+                                                <li>No co-morbid</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+
+                        <li><b>Discharge Criteria</b><br>
+                            The criteria for discharge to this facility is in accordance with the latest COVID-19 Management Guidelines in Malaysia, namely
+                            
+                            <ol>
+                                <li><b>Symptomatic COVID-19 patients (other than Category 1):</b><br>
+                                    <ul>
+                                        <li>At least 10 days have passed since symptoms began and;</li>
+                                        <li>At least 24 hours have passed since the resolution of the fever without any fever medication and;</li>
+                                        <li>Other symptoms such as difficulty breathing, cough and others have improved</li>
+                                    </ul>
+                                </li>
+
+                                <li><b>Asymptomatic COVID-19 patients (Category 1 only):</b><br>
+                                    <ul>
+                                        <li>After 10 days have elapsed from the date of the first positive RT-PCR / RTK Ag test</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><span class="subheading section__block-subheading">After the quarantine period at the hotel expires, can I remove the pink bracelet myself?</span><br>
+                    <ul>
+                        <li>We will advise patient accordingly as the procedure differs from each CAC</li>
+                    </ul>
+                </li>
+			</ol>
+        </div>
+	</div>
+</div>
+
+{%- endblock %}

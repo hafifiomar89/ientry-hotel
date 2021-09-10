@@ -7,8 +7,8 @@
 		<form id='booking-confirm' action='#' method='post'>
 			<div class="section__block">
 				<div class="section__block-header payment-success--">
-					IF PAYMENT SUCCESS
-					<div class="section__block-header-primary">
+					{# IF PAYMENT SUCCESS #}
+					{# <div class="section__block-header-primary">
 						<div class="heading section__block-heading">
 							{{ data.mainHeading }}<br>
 							{{ data.mainHeading2 }} <span class="text-highlight">{{ data.mainHeadingHighlight }}</span>
@@ -17,9 +17,9 @@
 						<div class="booking-id">
 							Your booking id: <span class="text-highlight">000001</span>
 						</div>
-					</div>
+					</div> #}
 
-					IF PAYMENT FAIL
+					{# IF PAYMENT FAIL #}
 					<div class="section__block-header-primary">
 						<div class="heading section__block-heading">
 							{{ data.mainHeadingFail }}<br>
@@ -27,14 +27,14 @@
 						</div>
 					</div>
 
-					IF PAYMENT SUCCESS
-					<div class="section__block-header-secondary">
+					{# IF PAYMENT SUCCESS #}
+					{# <div class="section__block-header-secondary">
 						<div class="section__block-header-image">
 							<img src="{{path.images.pages}}payment-success/{{ data.mainHeaderImage }}">
 						</div>
-					</div>
+					</div> #}
 
-					IF PAYMENT FAIL
+					{# IF PAYMENT FAIL #}
 					<div class="section__block-header-secondary">
 						<div class="section__block-header-image">
 							<img src="{{path.images.pages}}payment-fail/{{ data.mainHeaderImageFail }}">
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 
-			IF PAYMENT SUCCESS
+			{# IF PAYMENT SUCCESS
 			<div class="section__block" style="text-align: center;">
 				<a class="button" href="{%- if language == 'my' -%} {% else %} {{ path.language.en }} {% endif %}">
                     {%- if language == 'my' -%} Kembali ke halaman utama {% else %} Back to home {%- endif -%}
@@ -52,9 +52,9 @@
                 <a class="button-text" href="{%- if language == 'my' -%}{{ path.language.my }}select-room.html {% else %} {{ path.language.en }}select-room.html {% endif %}" style="margin-left: 15px;">
                     {%- if language == 'my' -%} Print your receipt {% else %} Print receipt {%- endif -%}
                 </a>
-            </div>
+            </div> #}
 
-			IF PAYMENT FAIL
+			{# IF PAYMENT FAIL #}
 			<div class="section__block" style="text-align: center;">
 				<a class="button" href="{%- if language == 'my' -%}{{ path.language.my }}booking-confirm.html {% else %} {{ path.language.en }}booking-confirm.html {% endif %}">
                     {%- if language == 'my' -%} Kembali ke halaman utama {% else %} Back to BOOKING CONFIRM page and resubmit again {%- endif -%}

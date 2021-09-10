@@ -15,6 +15,19 @@
   a {
     margin-left: 10px;
   }
+
+  .button {
+    font-size: 24px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    background: $blue-2;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &:hover {
+      background: $orange;
+    }
+  }
 }
 .total-amount__price {
   font-size: 48px;
@@ -46,6 +59,11 @@
       + a {
         margin-left: 10px;
       }
+    }
+
+    .button {
+      font-size: 18px;
+      border-radius: 30px;
     }
   }
 }
