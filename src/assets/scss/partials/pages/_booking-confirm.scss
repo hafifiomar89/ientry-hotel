@@ -87,3 +87,63 @@
     }
   }
 }
+
+.upload-file {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+
+  .button {
+    width: 100px;
+    padding: 0.625em 0.5em;
+  }
+}
+
+#file-chosen{
+  margin-left: 0.3rem;
+  font-family: sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  width: 140px; 
+  overflow: hidden;
+}
+
+.upload-file__button {
+  border-radius: 50%;
+  background: #ccc;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.3rem;
+
+  &.add-- {
+    background: #069862;
+
+    &:before {
+      font-family: 'Font Awesome\ 5 Free';
+      content: "\f067";
+      line-height: 1;
+      color: $white;
+      font-weight: 900;
+    }
+  }
+
+  &.remove-- {
+    background: $red;
+
+    &:before {
+      font-family: 'Font Awesome\ 5 Free';
+      content: "\f068";
+      line-height: 1;
+      color: $white;
+      font-weight: 900;
+    }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

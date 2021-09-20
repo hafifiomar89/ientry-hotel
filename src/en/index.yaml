@@ -2,10 +2,8 @@ title: "Home"
 folder: "our-hotels"
 
 navigation:
-  - link: "about-us.html"
-    title: "About us"
-  - link: "select-room.html"
-    title: "Book now"
+  - link: "faq.html"
+    title: "FAQ"
   - link: "helpdesk.html"
     title: "Helpdesk"
 
